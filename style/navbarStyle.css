@@ -1,0 +1,15 @@
+nav {
+	background-color: #1A2D34;
+}
+
+.bouton {
+	border-radius: 50px !important;
+	padding-left: 15px !important;
+	padding-right: 15px !important;
+	background-color: #F90F7A !important;
+	color: white !important;
+}
+
+nav div {
+	padding-right: 15px;
+}
