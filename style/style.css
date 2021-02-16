@@ -6,8 +6,6 @@
 
 header {
 	background-color: #1A2D34;
-	padding-left: 15%;
-	padding-right: 15%;
 	height: auto;
 }
 
@@ -74,10 +72,9 @@ color: #737176;
 	background-color: #F8F9FD;
 }
 
-#section2 h2, p {
-    text-align: center;
+.section2CenteredText {
+	text-align: center;
 }
-
 
 .lienSection2 {
 	text-align: center;
@@ -310,4 +307,12 @@ color: #737176;
 	height: 100px;
 	border-bottom-left-radius: 50%;
 	border-bottom-right-radius: 50%;
+}
+
+.changeColor {
+	color: #F90F7A;
+}
+
+.section5TextColor1, .section5TextColor2, .section5TextColor3, .section5TextColor4, .section5TextColor5, .section5TextColor6 {
+	font-weight: bold;
 }
