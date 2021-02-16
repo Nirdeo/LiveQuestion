@@ -204,7 +204,7 @@
 					<p class="text6">BONJOUR</p>
 				</div>
 			<div class="boutonFaq">
-				<button type="button" class="btn btn-light disabled">Still have unanswered questins?<span class="boutonRose"> Get in touch</span></button>
+				<button type="button" class="btn btn-light disabled">Still have unanswered questions?<span class="boutonRose"> Get in touch</span></button>
 			</div>
 		</div>
 
