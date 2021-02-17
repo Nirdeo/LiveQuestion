@@ -17,7 +17,7 @@ header {
 	color: white !important;
 }
 header img {
-	height: 250px;
+	height: 350px;
 	width: auto;
 }
 
@@ -39,29 +39,33 @@ header img {
 	margin-bottom: 40px;
 }
 
+.headerBlock h1 {
+	font-size: 60px;
+}
+
 
 /*SECTION 1*/
 
 #section1 {
-    padding-top: 40px;
-    padding-bottom: 40px;
+	padding-top: 40px;
+	padding-bottom: 40px;
 }
 
 
 #section1 p {
-text-align: initial;
-width: 134%;
-color: #737176;
+	text-align: initial;
+	width: 134%;
+	color: #737176;
 }
 #section1 h5 {
-    width: 110%;
+	width: 110%;
 }
 #section1 .col-md-3 {
-    margin-left: 8%;
+	margin-left: 8%;
 }
 
 #section1 img {
-    margin-bottom: 5%;
+	margin-bottom: 5%;
 }
 
 /* SECTION 2 */
@@ -82,94 +86,98 @@ color: #737176;
 }
 
 .boutonCarousel {
-	
+	font-weight: bold !important;
+	background-color: #F90F7A !important;
+	color: white !important;
+	margin-top: 10px;
+	margin-bottom: 20px;
 }
 
 #section2 .subtitles {
-    float: right;
-    margin-left: 54%;
-    margin-top: -30%;
+	float: right;
+	margin-left: 54%;
+	margin-top: -30%;
 }
 #section2 .subtitles h2 {
-    text-align: initial;
-    width: 54%;
+	text-align: initial;
+	width: 54%;
 }
 #section2 .subtitles p {
-    text-align: initial;
-    width: 77%;
+	text-align: initial;
+	width: 77%;
 }
 #section2 .subtitles-inv {
-    float: right;
-    margin-right: 15%;
-    margin-top: 5%;
+	float: right;
+	margin-right: 15%;
+	margin-top: 5%;
 }
 #section2 .subtitles-inv h2 {
-    text-align: initial;
-    width: 34%;
+	text-align: initial;
+	width: 34%;
 }
 #section2 .subtitles-inv p {
-    text-align: initial;
-    width: 46%;
+	text-align: initial;
+	width: 46%;
 }
 #section2 .inv{
-    margin-left: 33%;
-    margin-top: -26%;
+	margin-left: 33%;
+	margin-top: -26%;
 }
 #section2 .card1 {
-     width: 70%;
-     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-     text-align: center;
+	width: 70%;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	text-align: center;
 }
 
 #section2 .card1 img{
-    width: 12%;
-    margin-top: 2%;
-    margin-right: 77%;
+	width: 12%;
+	margin-top: 2%;
+	margin-right: 77%;
 }
 
 #section2 .card1 p {
-    margin-left: 20%;
-    margin-top: -12%;
-    text-align: initial;
-    width: 74%;
+	margin-left: 20%;
+	margin-top: -12%;
+	text-align: initial;
+	width: 74%;
 }
 #section2 .card2 {
-     width: 32%;
-     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-     padding-bottom: 0.25%;
-     text-align: center;
+	width: 32%;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	padding-bottom: 0.25%;
+	text-align: center;
 }
 
 #section2 .card2 img{
-    width: 12%;
-    margin-top: 2%;
-    margin-right: 77%;
+	width: 12%;
+	margin-top: 2%;
+	margin-right: 77%;
 }
 
 #section2 .card2 p {
-    margin-left: 20%;
-    margin-top: -10%;
-    text-align: initial;
-    width: 74%;
+	margin-left: 20%;
+	margin-top: -10%;
+	text-align: initial;
+	width: 74%;
 }
 #section2 .card3 {
-     width: 32%;
-     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-     padding-bottom: 0.25%;
-     text-align: center;
+	width: 32%;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	padding-bottom: 0.25%;
+	text-align: center;
 }
 
 #section2 .card3 img{
-    width: 12%;
-    margin-top: 2%;
-    margin-right: 77%;
+	width: 12%;
+	margin-top: 2%;
+	margin-right: 77%;
 }
 
 #section2 .card3 p {
-    margin-left: 20%;
-    margin-top: -10%;
-    text-align: initial;
-    width: 74%;
+	margin-left: 20%;
+	margin-top: -10%;
+	text-align: initial;
+	width: 74%;
 }
 
 
@@ -220,12 +228,12 @@ color: #737176;
 
 .texteApp h4{
 	font-weight: bold;
-	font-size: 40px;
+	font-size: 50px;
 	color: #FFF;
 }
 
 .texteApp p{
-	font-size: 20px;
+	font-size: 18px;
 	color: #FFF;
 }
 .iconApp{
@@ -256,11 +264,11 @@ color: #737176;
 }
 .titreFaq h4{
 	font-weight: bold;
-	font-size: 40px;
+	font-size: 50px;
 	color: #000;
 }
 .titreFaq p{
-	font-size: 20px;
+	font-size: 18px;
 	color: #000;
 }
 
@@ -270,10 +278,11 @@ color: #737176;
 }
 .question1, .question2, .question3, .question4, .question5, .question6{
 	width: auto;
-	border: 1px solid #000;
+	border: 1px solid lightgrey;
+	border-radius: 4px;
 	margin-top: 10px;
-	margin-left: 90px;
-	margin-right: 90px;
+	margin-left: 120px;
+	margin-right: 120px;
 }
 .question1, .question2, .question3, .question4, .question5, .question6 p{
 	padding-top: 16px;
@@ -298,7 +307,7 @@ color: #737176;
 }
 
 .borderBottomDivSection5 {
-	height: 200px;
+	height: 150px;
 	background-color: #1A2D34;
 }
 
