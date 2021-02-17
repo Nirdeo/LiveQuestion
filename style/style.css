@@ -294,6 +294,7 @@ header img {
 .iconeFleche{
 	float: right;
 	margin-right: 15px;
+	cursor: pointer;
 }
 .boutonFaq{
 	width: auto;
