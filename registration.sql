@@ -22,8 +22,8 @@ FOREIGN KEY (categorie_id) REFERENCES categories(id),
 FOREIGN KEY (auteur_id) REFERENCES utilisateurs(id)
 );
 CREATE TABLE repondre (
-utilisateurs_id INT AUTO_INCREMENT,
-questions_id INT AUTO_INCREMENT,
+utilisateurs_id INT,
+questions_id INT,
 date DATETIME,
 reponse VARCHAR(255),
 PRIMARY KEY (utilisateurs_id, questions_id),
