@@ -24,15 +24,15 @@
 	if (isset($_POST["submit"])) {
 		$username = $_POST["username"];
 		$password = hash("sha256", $_POST["password"]);
-		$query = $co->prepare('SELECT * FROM utilisateurs WHERE pseudo=:login and mot_de_passe=:pass');
-		$query->bindParam(":login", $username);
+		$query = $co->prepare('SELECT * FROM utilisateurs WHERE pseudo=:username and mot_de_passe=:pass');
+		$query->bindParam(":username", $username);
 		$query->bindParam(":pass", $password);
 		$query->execute();
 		$result = $query->fetchall();
 		$rows = $query->rowCount();
 		if ($rows == 1) {
 			$_SESSION["username"] = $username;
-			echo "<p>Vous vous etes connecter au nom de" . $_SESSION['username'] . "</p>";
+			echo "<p>Vous vous etes connecter au nom de " . $_SESSION['username'] . "</p>";
 		}else {
 			$message = "Le nom d'utilisateur ou le mot de passe est incorrect.";
 		}
