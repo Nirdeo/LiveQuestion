@@ -32,7 +32,6 @@
       <section>
          <div class="container">
             <!-- TOAST -->
-            <div class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
                <div class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
                   <div class="toast-header">
                      <strong class="mr-auto"><i class="fas fa-user-circle"></i> NomUtilisateur | nbr avis récoltés | Catégories</strong>
@@ -45,7 +44,6 @@
                      <a><i class="far fa-heart"></i></a> <a><i class="far fa-comments"></i></a>
                   </div>
                </div>
-            </div>
             <div class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
                <div class="toast-header">
                   <strong class="mr-auto"><i class="fas fa-user-circle"></i> NomUtilisateur | Nbr avis récoltés | Catégories</strong>
