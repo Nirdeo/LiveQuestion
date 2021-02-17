@@ -7,7 +7,7 @@
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
-      <link rel="stylesheet" type="text/css" href="co.css">
+      <link rel="stylesheet" type="text/css" href="hConnexion.css">
       <script src="script.js"></script>
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
    </head>
@@ -164,12 +164,19 @@
                         <span aria-hidden="true">&times;</span>
                         </button>
                      </div>
-                     <div class="modal-body">
+                     <div class="modal-body"><form action="hConnexion.html" method="post">
+                         <label for="categorie">Choisissez une catégorie :</label>
+                         <select name="categorie" id="categorie">
+                         <option value="musique">Musique</option>
+                         <option value="sport">Sport</option>
+                         <option value="cinema">Cinéma</option>
+                         </select>
                         <label for="question">Vous pouvez poser une question ci-dessous:</label>
                         <textarea id="question" name="question" rows="5" cols="62" maxlength="450"></textarea>
+                         <input type="submit" value="Ajouter une question" class="btn btn-primary">
+                         </form>
                      </div>
                      <div class="modal-footer">
-                        <button type="button" class="btn btn-primary">Ajouter une question</button>
                         <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Annuler</button>
                      </div>
                   </div>
