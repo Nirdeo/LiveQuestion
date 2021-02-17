@@ -37,3 +37,40 @@ body{
 	border-radius: 30px;
 	transition: .5s;
 }
+.inputGroup{
+	top: 180px;
+	position: absolute;
+	width: 280px;
+	transition: .5s;
+}
+.inputField{
+	width: 100%;
+	padding: 10px 0;
+	margin: 5px;
+	border-left: 0;
+	border-top: 0;
+	border-right: 0;
+	border-bottom: 1px solid #000;
+	outline: none;
+	background: transparent;
+}
+.submitBtn{
+	width: 85%;
+	padding: 10px 30px;
+	cursor: pointer;
+	display: block;
+	margin: auto;
+	background: linear-gradient(to right, #FF105F, #FFAD06);
+	border: 0;
+	outline: none;
+	border-radius: 30px;
+}
+.checkBox{
+	margin: 30px 10px 30px 0;
+}
+span{
+	color: #777;
+	font-size: 12px;
+	bottom: 68px;
+	position: absolute;
+}
