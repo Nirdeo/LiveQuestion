@@ -1,5 +1,9 @@
+<head>
+	<link rel="stylesheet" type="text/css" href="style/navbarStyle.css">
+</head>
+
 <nav class="navbar navbar-expand-md navbar-dark">
-	<a class="navbar-brand font-weight-bold" href="#">Saint Vincent BTS1</a>
+	<a class="navbar-brand font-weight-bold" href="index.php">Saint Vincent BTS1</a>
 	<div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
 		<ul class="navbar-nav">
 			<li class="nav-item dropdown">
@@ -32,6 +36,6 @@
 			</li>
 		</ul>
 	</div>
-	<a href="connect.php" class="navbar-link btn bouton">Se Connecter</a>
+	<a href="connexion.php" class="navbar-link btn bouton">Se Connecter</a>
 	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"><span class="navbar-toggler-icon"></span></button>
 </nav>

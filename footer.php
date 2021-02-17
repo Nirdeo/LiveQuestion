@@ -1,3 +1,7 @@
+<head>
+	<link rel="stylesheet" type="text/css" href="style/footerStyle.css">
+</head>
+
 <footer>
 
 		<div class="borderFooter"></div>

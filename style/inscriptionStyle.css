@@ -1,0 +1,39 @@
+body{
+	margin: 0;
+	padding: 0;
+	background: url(img/fondInscription.jpg) no-repeat center fixed;
+	background-size: cover;
+	background-position: center;
+}
+.formBox{
+	width: 480px;
+	height: 500px;
+	position: relative;
+	margin: 6% auto;
+	background: #FFF;
+	padding: 5px;
+}
+.buttonBox{
+	width: 280px;
+	height: 35px auto;
+	position: relative;box-shadow: 0 0 20px 9px #FF61241F;
+	border-radius: 30px;
+}
+.toggle-btn{
+	padding: 10px 30px;
+	cursor: pointer;
+	background: transparent;
+	border: 0;
+	outline: none;
+	position: relative;
+}
+#btn{
+	top: 0;
+	left: 0;
+	position: absolute;
+	width: 140px;
+	height: 100%;
+	background: linear-gradient(to right, #FF105F, #FFAD06);
+	border-radius: 30px;
+	transition: .5s;
+}
