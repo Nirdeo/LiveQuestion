@@ -1,3 +1,2 @@
 # LiveQuestion
-Projet Final
-C'est un projet de création de d'un site de questions réponses.
+C'est un projet de création d'un site de questions-réponses.
