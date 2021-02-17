@@ -139,23 +139,21 @@
 
 	<section id="Section4">
 
-		<div class="container">
-			<div class="contenuApp">
-				<div class="texteApp">
-					<h4>Etiam laot, alique sceleris.</h4><br>
-					<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem<br> accusantium doloremque laudantium, totam rem aperiam, easque ipsa.</p>
-				</div>
-				<div class="iconApp">
-					<button type="button" class="btn btn-light btn-lg"><img class="imgMarques" src="img/marque1.jpg"> Kyan Boards</button>
-					<button type="button" class="btn btn-light btn-lg"><img class="imgMarques" src="img/marque2.jpg"> Atica</button>
-					<button type="button" class="btn btn-light btn-lg"><img class="imgMarques" src="img/marque3.jpg"> Triva</button>
-					<button type="button" class="btn btn-light btn-lg"><img class="imgMarques" src="img/marque4.jpg"> Kanba</button>
-				</div>
-				<div class="iconApp">
-					<button type="button" class="btn btn-light btn-lg"><img class="imgMarques" src="img/marque5.jpg"> Tvit Forms</button>
-					<button type="button" class="btn btn-light btn-lg"><img class="imgMarques" src="img/marque6.jpg"> Aven</button>
-					<button type="button" class="btn btn-light btn-lg"><img class="imgMarques" src="img/marque7.jpg"> Utosia</button>
-				</div>
+		<div class="contenuApp">
+			<div class="texteApp">
+				<h4>Etiam laot, alique sceleris.</h4><br>
+				<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem<br> accusantium doloremque laudantium, totam rem aperiam, easque ipsa.</p>
+			</div>
+			<div class="iconApp">
+				<button type="button" class="btn btn-light btn-lg"><img class="imgMarques" src="img/marque1.jpg"> Kyan Boards</button>
+				<button type="button" class="btn btn-light btn-lg"><img class="imgMarques" src="img/marque2.jpg"> Atica</button>
+				<button type="button" class="btn btn-light btn-lg"><img class="imgMarques" src="img/marque3.jpg"> Triva</button>
+				<button type="button" class="btn btn-light btn-lg"><img class="imgMarques" src="img/marque4.jpg"> Kanba</button>
+			</div>
+			<div class="iconApp">
+				<button type="button" class="btn btn-light btn-lg"><img class="imgMarques" src="img/marque5.jpg"> Tvit Forms</button>
+				<button type="button" class="btn btn-light btn-lg"><img class="imgMarques" src="img/marque6.jpg"> Aven</button>
+				<button type="button" class="btn btn-light btn-lg"><img class="imgMarques" src="img/marque7.jpg"> Utosia</button>
 			</div>
 		</div>
 
