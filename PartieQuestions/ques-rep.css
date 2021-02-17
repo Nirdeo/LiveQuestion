@@ -1,0 +1,35 @@
+/* GENERAL */
+
+p {
+    font-size: 15px;
+}
+
+body {
+    background-color: #eee;
+}
+
+
+/* NAVBAR */
+
+.navbar-light .navbar-brand {
+    color: #F90F7A;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: black;
+}
+
+/* TOAST */
+
+.container > .toast {
+    max-width: none;
+}
+
+.roselq {
+    color: #F90F7A;
+}
+
+.rosebutton {
+    background-color: #F90F7A;
+    color: #fff;
+}
