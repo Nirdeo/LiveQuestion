@@ -15,7 +15,6 @@
 <body>
 
 	<div class="loginBox">
-		<img src="img/avatar-wp.png" class="avatar">
 		<h1>Se connecter</h1>
 		<form>
 			<p>Nom d'Utilisateur</p>
