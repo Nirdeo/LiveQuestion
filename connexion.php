@@ -14,17 +14,17 @@
 </head>
 <body>
 
-	<div class="loginBox">
-		<h1>Se connecter</h1>
-		<form>
-			<p>Nom d'Utilisateur</p>
-			<input type="text" name="" placeholder="Enter votre nom d'utilisateur">
-			<p>mot de passe</p>
-			<input type="password" name="" placeholder="Enter votre mot de passe">
-			<input type="submit" name="" value="valider">
-			<p>Vous n'avez pas de compte ? <a href="#"> S'inscrire maintenant !</a></p>
-		</form>
-	</div>
+		<div class="loginBox">
+			<h1>Se connecter</h1>
+			<form>
+				<p>Nom d'Utilisateur</p>
+				<input type="text" name="" placeholder="Enter votre nom d'utilisateur">
+				<p>mot de passe</p>
+				<input type="password" name="" placeholder="Enter votre mot de passe">
+				<input type="submit" name="" value="valider">
+				<p>Vous n'avez pas de compte ? <a href="#"> S'inscrire maintenant !</a></p>
+			</form>
+		</div>
 
 </body>
 </html>

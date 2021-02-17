@@ -1,10 +1,14 @@
-body{
+html{
+	background-color: #1A2D34;
+}
+body {
 	margin: 0;
 	padding: 0;
-	background: url(../img/fondInscription.jpg) no-repeat center fixed;
-	background-size: cover;
-	background-position: center;
-
+}
+.fondDeConnexion{
+	width: 100%;
+	height: 1;
+	background-color: #1A2D34;
 }
 .loginBox{
 	width: 320px;
