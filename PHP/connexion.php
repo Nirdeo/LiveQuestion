@@ -6,7 +6,7 @@ function connexionBdd() {
     try {
 
         $co = new PDO("mysql:host=" . $server .";dbname=" . $dbname, $user, $pass);
-        $co->setAttribute(PDO:ATTR-ERRMODE, PDO::ERRMODE_EXCEPTION);
+        $co->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
     }
     catch(PDOException $e) {
