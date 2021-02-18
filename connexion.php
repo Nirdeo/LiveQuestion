@@ -14,6 +14,8 @@
 </head>
 <body>
 
+	<?php require("navbar.php"); ?>
+
 	<?php
 	require("PHP/connexion.php");
 
@@ -40,21 +42,23 @@
 
 	?>
 
-		<div class="loginBox">
-			<h1>Se connecter</h1>
-			<form action="" method="post" name="login">
-				<p>Nom d'Utilisateur</p>
-				<input type="text" name="username" placeholder="Enter votre nom d'utilisateur">
-				<p>mot de passe</p>
-				<input type="password" name="password" placeholder="Enter votre mot de passe">
-				<input type="submit" name="submit" value="valider">
-				<p>Vous n'avez pas de compte ? <a href="#"> S'inscrire maintenant !</a></p>
-			</form>
-		</div>
+	<div class="loginBox">
+		<h1>Se connecter</h1>
+		<form action="" method="post" name="login">
+			<p>Nom d'Utilisateur</p>
+			<input type="text" name="username" placeholder="Enter votre nom d'utilisateur">
+			<p>mot de passe</p>
+			<input type="password" name="password" placeholder="Enter votre mot de passe">
+			<input type="submit" name="submit" value="valider">
+			<p>Vous n'avez pas de compte ? <a href="#"> S'inscrire maintenant !</a></p>
+		</form>
+	</div>
 	<?php
 	if (! empty($message)) {
 		echo "<p>$message</p>";
 	}
 	?>
+
+	<?php require("footer.php"); ?>
 </body>
 </html>
