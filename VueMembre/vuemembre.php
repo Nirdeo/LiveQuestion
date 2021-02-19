@@ -38,7 +38,6 @@
         <div class="container">
             <h3>Page de profil</h3>
             <h1>Bienvenue sur le profil de NomUtilisateur <i class="fas fa-male"></i>/<i class="fas fa-female"></i> !</h1><br>
-        </div>
         <!-- TOAST -->
          <h3><a href="../PartieQuestions/ques-rep.php">Titre de la question</a></h3>
                <div class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
@@ -140,6 +139,17 @@
                      Question ?
                   </div>
                </div>
+            <h3><a href="ques-rep.php">Titre de la question</a></h3>
+            <!-- TOAST -->
+            <div class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-header">
+                    <strong class="mr-auto"><a href="../EspaceMembre/espacemembre.php"><i class="fas fa-user-circle"></i> NomUtilisateur</a> | nbr avis récoltés | Catégories | <i class="far fa-heart"></i></strong>
+                    <small>Date de la question</small>
+                </div>
+                <div class="toast-body">
+                    Question ?
+                </div>
+            </div>
     </section>
 </body>
 

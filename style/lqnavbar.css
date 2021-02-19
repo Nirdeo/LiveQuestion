@@ -1,0 +1,9 @@
+/* NAVBAR */
+
+.navbar-light .navbar-brand {
+    color: #F90F7A;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: black;
+}
