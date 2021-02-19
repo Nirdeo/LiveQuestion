@@ -52,7 +52,7 @@
 				<p>mot de passe</p>
 				<input type="password" name="" placeholder="Enter votre mot de passe">
 				<input type="submit" name="" value="valider">
-				<p><span class="lienExterne">Vous n'avez pas de compte ? <a href="#"> S'inscrire maintenant !</span></a></p>
+				<p><span class="lienExterne">Vous n'avez pas de compte ? <a href="inscription.php"> S'inscrire maintenant !</span></a></p>
 			</form>
 		</div>
 	</div>
