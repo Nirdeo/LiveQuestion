@@ -141,7 +141,7 @@
 
 		<div class="contenuApp">
 			<div class="texteApp">
-				<h4>Etiam laot, alique sceleris.</h4><br>
+				<h4>Etiam laot,<span> alique sceleris.</span></h4><br>
 				<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem<br> accusantium doloremque laudantium, totam rem aperiam, easque ipsa.</p>
 			</div>
 			<div class="iconApp">
