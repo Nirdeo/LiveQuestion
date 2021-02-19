@@ -21,12 +21,15 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarColor03">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="ques-rep.php">Les questions</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#" data-toggle="modal" data-target="#exampleModal">Poser une question</a>
-                </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="hConnexion.php">Les questions</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#" data-toggle="modal" data-target="#questionModal">Poser une question</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#">Mon profil</a>
+               </li>
             </ul>
         </div>
     </nav>
@@ -47,11 +50,11 @@
                 </div>
             </div>
             <!-- MODAL -->
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal fade" id="questionModal" tabindex="-1" aria-labelledby="questionModalLabel" aria-hidden="true">
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Posez une question <i class="fas fa-pen"></i></h5>
+                            <h5 class="modal-title" id="questionModalLabel">Posez une question <i class="fas fa-pen"></i></h5>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
