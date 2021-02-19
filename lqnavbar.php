@@ -19,7 +19,7 @@
                 <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanses="false">Mon profil</a>
                 <div class="dropdown-menu">
                     <a class="dropdown-item" href="../EspaceMembre/espacemembre.php">Accéder à mon profil</a>
-                    <a class="dropdown-item" href="../LiveQuestion/index.php">Déconnexion</a>
+                    <a class="dropdown-item" href="logout.php">Déconnexion</a>
                 </div>
             </li>
         </ul>
