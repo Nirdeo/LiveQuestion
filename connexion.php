@@ -25,8 +25,7 @@
 
 	if (isset($_POST["submit"])) {
 		$username = $_POST["username"];
-		// $password = hash("sha256", $_POST["password"]);
-		$password = $_POST["password"];
+		$password = hash("sha256", $_POST["password"]);
 		$query = $co->prepare('SELECT * FROM utilisateurs WHERE pseudo=:username and mot_de_passe=:pass');
 		$query->bindParam(":username", $username);
 		$query->bindParam(":pass", $password);
@@ -46,12 +45,12 @@
 	<div class="wrapper">
 		<div class="loginBox">
 			<h1>Se connecter</h1>
-			<form>
+			<form action="" method="post" name="login">
 				<p>Nom d'Utilisateur</p>
-				<input type="text" name="" placeholder="Enter votre nom d'utilisateur">
+				<input type="text" name="username" placeholder="Enter votre nom d'utilisateur">
 				<p>mot de passe</p>
-				<input type="password" name="" placeholder="Enter votre mot de passe">
-				<input type="submit" name="" value="valider">
+				<input type="password" name="password" placeholder="Enter votre mot de passe">
+				<input type="submit" name="submit" value="valider">
 				<p><span class="lienExterne">Vous n'avez pas de compte ? <a href="inscription.php"> S'inscrire maintenant !</span></a></p>
 			</form>
 		</div>
