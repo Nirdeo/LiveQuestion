@@ -1,4 +1,6 @@
-nav {
+.paddingNavbar {
+	padding-left: 200px;
+	padding-right: 200px;
 	background-color: #1A2D34;
 }
 
