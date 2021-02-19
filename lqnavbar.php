@@ -1,5 +1,5 @@
 <head>
-    <link rel="stylesheet" type="text/css" href="style/lqnavbarStyle.css">
+    <link rel="stylesheet" type="text/css" href="../style/lqnavbarStyle.css">
 </head>
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
