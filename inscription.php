@@ -19,17 +19,19 @@
 			<h1>S'inscrire</h1>
 			<form>
 				<input type="text" name="" placeholder="Enter votre nom d'utilisateur">
-				<input type="text" name="" placeholder="Enter votre Adresse mail">
+				<input type="email" name="" placeholder="Enter votre Adresse mail">
 				<p>Genre :</p>
-				<label for="homme">Homme</label>
-				<input type="radio" id="homme" name="genre" value="Homme">
-				<label for="femme">Femme</label>
-				<input type="radio" id="femme" name="genre" value="Femme">
+				<div class="radioInput">
+					<label for="homme">Homme</label>
+					<input type="radio" id="homme" name="genre" value="Homme">
+					<label for="femme">Femme</label>
+					<input type="radio" id="femme" name="genre" value="Femme">
+				</div>
 				<input type="password" name="" placeholder="Enter votre mot de passe">
 				<input type="password" name="" placeholder="Confirmer votre mot de passe">
 				<input type="submit" name="" value="valider">
 				<p>Vous avez deja un compte ? <a href="connexion.php"> Se connecter !</a></p>
 			</form>
 		</div>
-</div>
-</html>
+	</div>
+	</html>
