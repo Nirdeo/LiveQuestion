@@ -14,20 +14,22 @@
 </head>
 <body>
 
-	<div class="hero">
-		<div class="formBox">
-			<div class="buttonBox">
-				<div id="btn"></div>
-				<button type="button" class="toggle-btn">Connexion </button>
-				<button type="button" class="toggle-btn">Inscription</button>
-			</div>
-			<form class="inputGroup">
-				<input type="text" class="inputField" placeholder="Nom Utilisateur ..." required="">
-				<input type="password" class="inputField" placeholder="Mot de passe ..." required="">
-				<input type="checkbox" class="checkBox"><span>Remenber password</span>
-				<button type="submit" class="submitBtn">Se connecter</button>
+	<div class="wrapper">
+		<div class="loginBox">
+			<h1>S'inscrire</h1>
+			<form>
+				<input type="text" name="" placeholder="Enter votre nom d'utilisateur">
+				<input type="text" name="" placeholder="Enter votre Adresse mail">
+				<p>Genre :</p>
+				<label for="homme">Homme</label>
+				<input type="radio" id="homme" name="genre" value="Homme">
+				<label for="femme">Femme</label>
+				<input type="radio" id="femme" name="genre" value="Femme">
+				<input type="password" name="" placeholder="Enter votre mot de passe">
+				<input type="password" name="" placeholder="Confirmer votre mot de passe">
+				<input type="submit" name="" value="valider">
+				<p>Vous avez deja un compte ? <a href="#"> Se connecter !</a></p>
 			</form>
 		</div>
-	</div>
-</body>
+</div>
 </html>
