@@ -1,3 +1,4 @@
+CREATE DATABASE registration;
 CREATE TABLE utilisateurs (
 id INT PRIMARY KEY AUTO_INCREMENT,
 pseudo VARCHAR(255),
