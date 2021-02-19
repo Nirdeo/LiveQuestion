@@ -51,7 +51,7 @@
 			<p>mot de passe</p>
 			<input type="password" name="password" placeholder="Enter votre mot de passe">
 			<input type="submit" name="submit" value="valider">
-			<p>Vous n'avez pas de compte ? <a href="#"> S'inscrire maintenant !</a></p>
+			<p>Vous n'avez pas de compte ? <a href="inscription.php"> S'inscrire maintenant !</a></p>
 		</form>
 	</div>
 	<?php
