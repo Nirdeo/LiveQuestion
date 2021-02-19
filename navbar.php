@@ -38,7 +38,7 @@
 				</li>
 			</ul>
 		</div>
-		<a href="connexion.php" class="navbar-link btn bouton">Se Connecter</a>
+		<a href="redirection.php" class="navbar-link btn bouton">Se Connecter</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"><span class="navbar-toggler-icon"></span></button>
 	</nav>
 </div>
