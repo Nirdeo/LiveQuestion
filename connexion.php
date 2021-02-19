@@ -14,7 +14,6 @@
 </head>
 <body>
 
-	<?php require("navbar.php"); ?>
 
 	<?php
 	require("PHP/connexion.php");
@@ -62,6 +61,5 @@
 	}
 	?>
 
-	<?php require("footer.php"); ?>
 </body>
 </html>
