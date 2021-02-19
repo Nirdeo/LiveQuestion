@@ -8,6 +8,9 @@ body {
     background-color: #eee;
 }
 
+.roselq {
+    color: #F90F7A;
+}
 
 /* NAVBAR */
 
@@ -25,9 +28,7 @@ body {
     max-width: none;
 }
 
-.roselq {
-    color: #F90F7A;
-}
+/* BUTTON */
 
 .rosebutton {
     background-color: #F90F7A;

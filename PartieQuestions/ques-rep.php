@@ -40,7 +40,15 @@
             <!-- TOAST -->
             <div class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
                 <div class="toast-header">
+<<<<<<< Updated upstream:PartieQuestions/ques-rep.php
                     <strong class="mr-auto"><a href="../EspaceMembre/espacemembre.php"><i class="fas fa-user-circle"></i> NomUtilisateur</a> | nbr avis récoltés | Catégories | <i class="far fa-heart"></i></strong>
+=======
+<<<<<<< Updated upstream:PartieQuestions/ques-rep.html
+                    <strong class="mr-auto"><i class="fas fa-user-circle"></i> NomUtilisateur | nbr avis récoltés | Catégories</strong>
+=======
+                    <strong class="mr-auto"><a href="../VueMembre/vuemembre.php"><i class="fas fa-user-circle"></i> NomUtilisateur</a> | nbr avis récoltés | Catégories | <i class="far fa-heart"></i></strong>
+>>>>>>> Stashed changes:PartieQuestions/ques-rep.php
+>>>>>>> Stashed changes:PartieQuestions/ques-rep.html
                     <small>Date de la question</small>
                 </div>
                 <div class="toast-body">
@@ -81,7 +89,15 @@
                     <h3><span class="roselq">Nbr</span> Réponses</h3>
                     <div class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
                         <div class="toast-header">
+<<<<<<< Updated upstream:PartieQuestions/ques-rep.php
                             <strong class="mr-auto"><a href="../EspaceMembre/espacemembre.php"><i class="fas fa-user-circle"></i> NomUtilisateur</a> | <i class="far fa-heart"></i></strong>
+=======
+<<<<<<< Updated upstream:PartieQuestions/ques-rep.html
+                            <strong class="mr-auto"><i class="fas fa-user-circle"></i> NomUtilisateur</strong>
+=======
+                            <strong class="mr-auto"><a href="../VueMembre/vuemembre.php"><i class="fas fa-user-circle"></i> NomUtilisateur</a> | <i class="far fa-heart"></i></strong>
+>>>>>>> Stashed changes:PartieQuestions/ques-rep.php
+>>>>>>> Stashed changes:PartieQuestions/ques-rep.html
                             <small>Date de la réponse</small>
                         </div>
                         <div class="toast-body">
@@ -90,7 +106,15 @@
                     </div>
                     <div class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
                         <div class="toast-header">
+<<<<<<< Updated upstream:PartieQuestions/ques-rep.php
                             <strong class="mr-auto"><a href="../EspaceMembre/espacemembre.php"><i class="fas fa-user-circle"></i> NomUtilisateur</a> | <i class="far fa-heart"></i></strong>
+=======
+<<<<<<< Updated upstream:PartieQuestions/ques-rep.html
+                            <strong class="mr-auto"><i class="fas fa-user-circle"></i> NomUtilisateur</strong>
+=======
+                            <strong class="mr-auto"><a href="../VueMembre/vuemembre.php"><i class="fas fa-user-circle"></i> NomUtilisateur</a> | <i class="far fa-heart"></i></strong>
+>>>>>>> Stashed changes:PartieQuestions/ques-rep.php
+>>>>>>> Stashed changes:PartieQuestions/ques-rep.html
                             <small>Date de la réponse</small>
                         </div>
                         <div class="toast-body">
@@ -98,6 +122,7 @@
                         </div>
                     </div>
                 </div>
+                <!-- FORMULAIRE -->
                 <div class="col-md-6">
                     <h3>Répondre à la question</h3>
                     <div class="row">
