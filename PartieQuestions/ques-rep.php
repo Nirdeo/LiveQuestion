@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
-   <head>
+
+<head>
     <title>LiveQuestion</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -21,32 +22,29 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarColor03">
             <ul class="navbar-nav mr-auto">
-               <li class="nav-item">
-                  <a class="nav-link" href="hConnexion.php">Les questions</a>
-               </li>
-               <li class="nav-item">
-                  <a class="nav-link" href="#" data-toggle="modal" data-target="#questionModal">Poser une question</a>
-               </li>
-               <li class="nav-item">
-                  <a class="nav-link" href="#">Mon profil</a>
-               </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="hConnexion.php">Les questions</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" data-toggle="modal" data-target="#questionModal">Poser une question</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../EspaceMembre/espacemembre.php">Mon profil</a>
+                </li>
             </ul>
         </div>
     </nav>
     <section>
         <div class="container">
-            <h3> Titre de la question</h3>
+            <h3><a href="ques-rep.php">Titre de la question</a></h3>
             <!-- TOAST -->
             <div class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
                 <div class="toast-header">
-                    <strong class="mr-auto"><i class="fas fa-user-circle"></i> NomUtilisateur | nbr avis récoltés | Catégories</strong>
+                    <strong class="mr-auto"><a href="../EspaceMembre/espacemembre.php"><i class="fas fa-user-circle"></i> NomUtilisateur</a> | nbr avis récoltés | Catégories | <i class="far fa-heart"></i></strong>
                     <small>Date de la question</small>
                 </div>
                 <div class="toast-body">
                     Question ?
-                </div>
-                <div class="toast-footer">
-                    <a><i class="far fa-heart"></i></a>
                 </div>
             </div>
             <!-- MODAL -->
@@ -83,26 +81,20 @@
                     <h3><span class="roselq">Nbr</span> Réponses</h3>
                     <div class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
                         <div class="toast-header">
-                            <strong class="mr-auto"><i class="fas fa-user-circle"></i> NomUtilisateur</strong>
+                            <strong class="mr-auto"><a href="../EspaceMembre/espacemembre.php"><i class="fas fa-user-circle"></i> NomUtilisateur</a> | <i class="far fa-heart"></i></strong>
                             <small>Date de la réponse</small>
                         </div>
                         <div class="toast-body">
                             Réponse !
-                        </div>
-                        <div class="toast-footer">
-                            <a><i class="far fa-heart"></i></a>
                         </div>
                     </div>
                     <div class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
                         <div class="toast-header">
-                            <strong class="mr-auto"><i class="fas fa-user-circle"></i> NomUtilisateur</strong>
+                            <strong class="mr-auto"><a href="../EspaceMembre/espacemembre.php"><i class="fas fa-user-circle"></i> NomUtilisateur</a> | <i class="far fa-heart"></i></strong>
                             <small>Date de la réponse</small>
                         </div>
                         <div class="toast-body">
                             Réponse !
-                        </div>
-                        <div class="toast-footer">
-                            <a><i class="far fa-heart"></i></a>
                         </div>
                     </div>
                 </div>
@@ -126,4 +118,6 @@
             </div>
         </div>
     </section>
-</body></html>
+</body>
+
+</html>
