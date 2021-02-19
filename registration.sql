@@ -1,4 +1,4 @@
-/* Il faut  préalable créer une base de données nommée registration avec CREATE DATABASE registration; */
+/* Il faut préalable créer une base de données nommée registration avec CREATE DATABASE registration; */
 CREATE TABLE utilisateurs (
 id INT PRIMARY KEY AUTO_INCREMENT,
 pseudo VARCHAR(255),
