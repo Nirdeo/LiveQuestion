@@ -151,9 +151,9 @@
                          <option value="musique">Musique</option>
                          <option value="sport">Sport</option>
                          <option value="cinema">Cinéma</option>
-                         </select>
-                        <label for="question">Vous pouvez poser une question ci-dessous:</label>
-                        <textarea id="question" name="question" rows="5" cols="62" maxlength="450"></textarea>
+                         </select><br>
+                        <label for="question">Contenu de la question :</label>
+                        <textarea id="question" name="question" rows="5" cols="62" maxlength="255"></textarea>
                          <input type="submit" value="Ajouter une question" class="btn btn-primary">
                          </form>
                      </div>
