@@ -27,7 +27,7 @@
                   <a class="nav-link" href="#" data-toggle="modal" data-target="#questionModal">Poser une question</a>
                </li>
                <li class="nav-item">
-                  <a class="nav-link" href="#">Mon profil</a>
+                  <a class="nav-link" href="../EspaceMembre/espacemembre.php">Mon profil</a>
                </li>
             </ul>
          </div>
@@ -35,135 +35,105 @@
       <section>
          <div class="container">
             <!-- TOAST -->
-            <h3> Titre de la question</h3>
+            <h3><a href="../PartieQuestions/ques-rep.php">Titre de la question</a></h3>
                <div class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
                   <div class="toast-header">
-                     <strong class="mr-auto"><i class="fas fa-user-circle"></i> NomUtilisateur | nbr avis récoltés | Catégories</strong>
+                     <strong class="mr-auto"><a href="../EspaceMembre/espacemembre.php"><i class="fas fa-user-circle"></i> NomUtilisateur</a> | nbr avis récoltés | Catégories | <i class="far fa-heart"></i></strong>
                      <small>Date de la question</small>
                   </div>
                   <div class="toast-body">
                      Question ?
                   </div>
-                  <div class="toast-footer">
-                     <a><i class="far fa-heart"></i></a> <a href="../PartieQuestions/ques-rep.php"><i class="far fa-comments"></i></a>
+               </div>
+             <h3><a href="../PartieQuestions/ques-rep.php">Titre de la question</a></h3>
+               <div class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
+                  <div class="toast-header">
+                     <strong class="mr-auto"><a href="../EspaceMembre/espacemembre.php"><i class="fas fa-user-circle"></i> NomUtilisateur</a> | nbr avis récoltés | Catégories | <i class="far fa-heart"></i></strong>
+                     <small>Date de la question</small>
+                  </div>
+                  <div class="toast-body">
+                     Question ?
                   </div>
                </div>
-               <h3> Titre de la question</h3>
-            <div class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
-               <div class="toast-header">
-                  <strong class="mr-auto"><i class="fas fa-user-circle"></i> NomUtilisateur | Nbr avis récoltés | Catégories</strong>
-                  <small>Date de la question</small>
+             <h3><a href="../PartieQuestions/ques-rep.php">Titre de la question</a></h3>
+               <div class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
+                  <div class="toast-header">
+                     <strong class="mr-auto"><a href="../EspaceMembre/espacemembre.php"><i class="fas fa-user-circle"></i> NomUtilisateur</a> | nbr avis récoltés | Catégories | <i class="far fa-heart"></i></strong>
+                     <small>Date de la question</small>
+                  </div>
+                  <div class="toast-body">
+                     Question ?
+                  </div>
                </div>
-               <div class="toast-body">
-                  Question ?
+             <h3><a href="../PartieQuestions/ques-rep.php">Titre de la question</a></h3>
+               <div class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
+                  <div class="toast-header">
+                     <strong class="mr-auto"><a href="../EspaceMembre/espacemembre.php"><i class="fas fa-user-circle"></i> NomUtilisateur</a> | nbr avis récoltés | Catégories | <i class="far fa-heart"></i></strong>
+                     <small>Date de la question</small>
+                  </div>
+                  <div class="toast-body">
+                     Question ?
+                  </div>
                </div>
-               <div class="toast-footer">
-                  <a><i class="far fa-heart"></i></a> <a href="../PartieQuestions/ques-rep.php"><i class="far fa-comments"></i></a>
+             <h3><a href="../PartieQuestions/ques-rep.php">Titre de la question</a></h3>
+               <div class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
+                  <div class="toast-header">
+                     <strong class="mr-auto"><a href="../EspaceMembre/espacemembre.php"><i class="fas fa-user-circle"></i> NomUtilisateur</a> | nbr avis récoltés | Catégories | <i class="far fa-heart"></i></strong>
+                     <small>Date de la question</small>
+                  </div>
+                  <div class="toast-body">
+                     Question ?
+                  </div>
                </div>
-            </div>
-            <h3> Titre de la question</h3>
-            <div class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
-               <div class="toast-header">
-                  <strong class="mr-auto"><i class="fas fa-user-circle"></i> NomUtilisateur | nbr avis récoltés | Catégories</strong>
-                  <small>Date de la question</small>
+             <h3><a href="../PartieQuestions/ques-rep.php">Titre de la question</a></h3>
+               <div class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
+                  <div class="toast-header">
+                     <strong class="mr-auto"><a href="../EspaceMembre/espacemembre.php"><i class="fas fa-user-circle"></i> NomUtilisateur</a> | nbr avis récoltés | Catégories | <i class="far fa-heart"></i></strong>
+                     <small>Date de la question</small>
+                  </div>
+                  <div class="toast-body">
+                     Question ?
+                  </div>
                </div>
-               <div class="toast-body">
-                  Question ?
+             <h3><a href="../PartieQuestions/ques-rep.php">Titre de la question</a></h3>
+               <div class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
+                  <div class="toast-header">
+                     <strong class="mr-auto"><a href="../EspaceMembre/espacemembre.php"><i class="fas fa-user-circle"></i> NomUtilisateur</a> | nbr avis récoltés | Catégories | <i class="far fa-heart"></i></strong>
+                     <small>Date de la question</small>
+                  </div>
+                  <div class="toast-body">
+                     Question ?
+                  </div>
                </div>
-               <div class="toast-footer">
-                  <a><i class="far fa-heart"></i></a> <a href="../PartieQuestions/ques-rep.php"><i class="far fa-comments"></i></a>
+             <h3><a href="../PartieQuestions/ques-rep.php">Titre de la question</a></h3>
+               <div class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
+                  <div class="toast-header">
+                     <strong class="mr-auto"><a href="../EspaceMembre/espacemembre.php"><i class="fas fa-user-circle"></i> NomUtilisateur</a> | nbr avis récoltés | Catégories | <i class="far fa-heart"></i></strong>
+                     <small>Date de la question</small>
+                  </div>
+                  <div class="toast-body">
+                     Question ?
+                  </div>
                </div>
-            </div>
-            <h3> Titre de la question</h3>
-            <div class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
-               <div class="toast-header">
-                  <strong class="mr-auto"><i class="fas fa-user-circle"></i> NomUtilisateur | nbr avis récoltés | Catégories</strong>
-                  <small>Date de la question</small>
+             <h3><a href="../PartieQuestions/ques-rep.php">Titre de la question</a></h3>
+               <div class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
+                  <div class="toast-header">
+                     <strong class="mr-auto"><a href="../EspaceMembre/espacemembre.php"><i class="fas fa-user-circle"></i> NomUtilisateur</a> | nbr avis récoltés | Catégories | <i class="far fa-heart"></i></strong>
+                     <small>Date de la question</small>
+                  </div>
+                  <div class="toast-body">
+                     Question ?
+                  </div>
                </div>
-               <div class="toast-body">
-                  Question ?
-               </div>
-               <div class="toast-footer">
-                  <a><i class="far fa-heart"></i></a> <a href="../PartieQuestions/ques-rep.php"><i class="far fa-comments"></i></a>
-               </div>
-            </div>
-            <h3> Titre de la question</h3>
-            <div class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
-               <div class="toast-header">
-                  <strong class="mr-auto"><i class="fas fa-user-circle"></i> NomUtilisateur | nbr avis récoltés | Catégories</strong>
-                  <small>Date de la question</small>
-               </div>
-               <div class="toast-body">
-                  Question ?
-               </div>
-               <div class="toast-footer">
-                  <a><i class="far fa-heart"></i></a> <a href="../PartieQuestions/ques-rep.php"><i class="far fa-comments"></i></a>
-               </div>
-            </div>
-            <h3> Titre de la question</h3>
-            <div class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
-               <div class="toast-header">
-                  <strong class="mr-auto"><i class="fas fa-user-circle"></i> NomUtilisateur | nbr avis récoltés | Catégories</strong>
-                  <small>Date de la question</small>
-               </div>
-               <div class="toast-body">
-                  Question ?
-               </div>
-               <div class="toast-footer">
-                  <a><i class="far fa-heart"></i></a> <a href="../PartieQuestions/ques-rep.php"><i class="far fa-comments"></i></a>
-               </div>
-            </div>
-            <h3> Titre de la question</h3>
-            <div class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
-               <div class="toast-header">
-                  <strong class="mr-auto"><i class="fas fa-user-circle"></i> NomUtilisateur | nbr avis récoltés | Catégories</strong>
-                  <small>Date de la question</small>
-               </div>
-               <div class="toast-body">
-                  Question ?
-               </div>
-               <div class="toast-footer">
-                  <a><i class="far fa-heart"></i></a> <a href="../PartieQuestions/ques-rep.php"><i class="far fa-comments"></i></a>
-               </div>
-            </div>
-            <h3> Titre de la question</h3>
-            <div class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
-               <div class="toast-header">
-                  <strong class="mr-auto"><i class="fas fa-user-circle"></i> NomUtilisateur | nbr avis récoltés | Catégories</strong>
-                  <small>Date de la question</small>
-               </div>
-               <div class="toast-body">
-                  Question ?
-               </div>
-               <div class="toast-footer">
-                  <a><i class="far fa-heart"></i></a> <a href="../PartieQuestions/ques-rep.php"><i class="far fa-comments"></i></a>
-               </div>
-            </div>
-            <h3> Titre de la question</h3>
-            <div class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
-               <div class="toast-header">
-                  <strong class="mr-auto"><i class="fas fa-user-circle"></i> NomUtilisateur | nbr avis récoltés | Catégories</strong>
-                  <small>Date de la question</small>
-               </div>
-               <div class="toast-body">
-                  Question ?
-               </div>
-               <div class="toast-footer">
-                  <a><i class="far fa-heart"></i></a> <a href="../PartieQuestions/ques-rep.php"><i class="far fa-comments"></i></a>
-               </div>
-            </div>
-            <h3> Titre de la question</h3>
-            <div class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
-               <div class="toast-header">
-                  <strong class="mr-auto"><i class="fas fa-user-circle"></i> NomUtilisateur | nbr avis récoltés | Catégories</strong>
-                  <small>Date de la question</small>
-               </div>
-               <div class="toast-body">
-                  Question ?
-               </div>
-               <div class="toast-footer">
-                  <a><i class="far fa-heart"></i></a> <a href="../PartieQuestions/ques-rep.php"><i class="far fa-comments"></i></a>
-               </div>
+             <h3><a href="../PartieQuestions/ques-rep.php">Titre de la question</a></h3>
+               <div class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
+                  <div class="toast-header">
+                     <strong class="mr-auto"><a href="../EspaceMembre/espacemembre.php"><i class="fas fa-user-circle"></i> NomUtilisateur</a> | nbr avis récoltés | Catégories | <i class="far fa-heart"></i></strong>
+                     <small>Date de la question</small>
+                  </div>
+                  <div class="toast-body">
+                     Question ?
+                  </div>
             </div>
             <!-- MODAL -->
             <div class="modal fade" id="questionModal" tabindex="-1" aria-labelledby="questionModalLabel" aria-hidden="true">
