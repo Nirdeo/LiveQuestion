@@ -1,15 +1,13 @@
-html{
+html {
 	background-color: #1A2D34;
 }
-body {
-	margin: 0;
-	padding: 0;
-}
+
 .fondDeConnexion{
 	width: 100%;
 	height: 1;
 	background-color: #1A2D34;
 }
+
 .loginBox{
 	width: 320px;
 	height: 450px;
