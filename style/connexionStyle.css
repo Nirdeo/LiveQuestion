@@ -1,47 +1,42 @@
-html {
-	background-color: #1A2D34;
+body{
+	margin: 0;
+	padding: 0;
 }
-
-.fondDeConnexion{
+.wrapper{
+	position: absolute;
 	width: 100%;
-	height: 1;
-	background-color: #1A2D34;
+	height: 100%;
+	overflow: hidden;
+	background: linear-gradient(0.25turn, #1A2D34, #1A2D34, #F90F7A);
 }
-
 .loginBox{
 	width: 320px;
-	height: 450px;
+	height: 470px;
 	background: #FFF;
-	color: #F90F7A;
 	top: 50%;
 	left: 50%;
 	position: absolute;
 	transform: translate(-50%,-50%);
 	box-sizing: border-box;
-	padding: 70px 30px;
+	padding: 40px 30px;
 	border-radius: 5px;
 	box-shadow: 10px 5px 5px black;
-}
-.avatar{
-	width: 100px;
-	height: 100px;
-	border-radius: 50%;
-	position: absolute;
-	top: -10%;
-	left: 35%;
 }
 
 h1{
 	margin: 0;
 	padding: 0 0 20px;
 	text-align: center;
-	font-size: 22px;
+	font-size: 20px !important;
 	color: #1A2D34;	
+    text-transform: uppercase;
 }
 
 .loginBox p{
 	margin: 0;
 	padding: 0;
+    margin-top: 25px;
+    color: #F90F7A;
 	font-weight: bold;
 }
 .loginBox input{
@@ -56,10 +51,11 @@ h1{
 	outline: none;
 	height: 40px;
 	color: #000;
-	font-size: 16px;
+	font-size: 14px;
 }
 
 .loginBox input[type="submit"]{
+    margin-top: 20px;
 	border: none;
 	outline: none;
 	height: 40px;
@@ -70,16 +66,18 @@ h1{
 }
 .loginBox input[type="submit"]:hover{
 	cursor: pointer;
-	background: lightgrey;
-	color: #000;
 }
 
 .loginBox a{
 	text-decoration: none;
 	font-size: 12px;
 	line-height: 20px;
-	color: darkgrey;
+	color: #1A2D34;
 }
 .loginBox a:hover{
-	color: #FB2525;
+	color: #F90F7A;
+}
+
+.lienExterne{
+    color: #1A2D34;
 }
