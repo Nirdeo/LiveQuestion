@@ -14,24 +14,57 @@
 </head>
 <body>
 
-	<div class="wrapper">
-		<div class="loginBox">
-			<h1>S'inscrire</h1>
-			<form>
-				<input type="text" name="" placeholder="Enter votre nom d'utilisateur">
-				<input type="email" name="" placeholder="Enter votre Adresse mail">
-				<p>Genre :</p>
-				<div class="radioInput">
-					<label for="homme">Homme</label>
-					<input type="radio" id="homme" name="genre" value="Homme">
-					<label for="femme">Femme</label>
-					<input type="radio" id="femme" name="genre" value="Femme">
-				</div>
-				<input type="password" name="" placeholder="Enter votre mot de passe">
-				<input type="password" name="" placeholder="Confirmer votre mot de passe">
-				<input type="submit" name="" value="valider">
-				<p>Vous avez deja un compte ? <a href="connexion.php"> Se connecter !</a></p>
-			</form>
+	<?php
+
+	require("PHP/connexion.php");
+
+	if (isset($_POST["submit"])) {
+		if (isset($_POST["username"], $_POST["email"], $_POST["genre"], $_POST["password"], $_POST["passwordC"])) {
+			if ($_POST["password"] == $_POST["passwordC"]) {
+				$username = $_POST["username"];
+				$email = $_POST["email"];
+				$genre = $_POST["genre"];
+				$password = hash("sha256", $_POST["password"]);
+				$date = date('Y-m-d H:i:s');
+				$co = connexionBdd();
+				$query = $co->prepare("INSERT into utilisateurs (pseudo, email, mot_de_passe, genre, date_inscription, role) VALUES (:username, :email, :pass, :genre, :dateAjd, 'membre')");
+				$query->bindParam(":username", $username);
+				$query->bindParam(":email", $email);
+				$query->bindParam(":genre", $genre);
+				$query->bindParam(":pass", $password);
+				$query->bindParam(":dateAjd", $date);
+				$query->execute();
+				if ($query) {
+					echo "Inscription valider";
+				}
+			}else {
+				echo "Les mots de passes ne correspondent pas";
+			}
+		}
+	}else {
+		?>
+		<div class="wrapper">
+			<div class="loginBox">
+				<h1>S'inscrire</h1>
+				<form action="" method="post" name="register">
+					<input type="text" name="username" placeholder="Enter votre nom d'utilisateur">
+					<input type="email" name="email" placeholder="Enter votre Adresse mail">
+					<p>Genre :</p>
+					<div class="radioInput">
+						<label for="homme">Homme</label>
+						<input type="radio" name="genre" value="H">
+						<label for="femme">Femme</label>
+						<input type="radio" name="genre" value="F">
+					</div>
+					<input type="password" name="password" placeholder="Enter votre mot de passe">
+					<input type="password" name="passwordC" placeholder="Confirmer votre mot de passe">
+					<input type="submit" name="submit" value="valider">
+					<p>Vous avez deja un compte ? <a href="connexion.php"> Se connecter !</a></p>
+				</form>
+			</div>
 		</div>
-	</div>
+		<?php
+	}
+	?>
+
 	</html>
