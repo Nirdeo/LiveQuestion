@@ -46,7 +46,7 @@
                     Question ?
                 </div>
                 <div class="toast-footer">
-                    <a><i class="far fa-heart"></i></a> <a><i class="far fa-comments"></i></a>
+                    <a><i class="far fa-heart"></i></a>
                 </div>
             </div>
             <!-- MODAL -->
@@ -90,7 +90,7 @@
                             Réponse !
                         </div>
                         <div class="toast-footer">
-                            <a><i class="far fa-heart"></i></a> <a><i class="far fa-comments"></i></a>
+                            <a><i class="far fa-heart"></i></a>
                         </div>
                     </div>
                     <div class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
@@ -102,7 +102,7 @@
                             Réponse !
                         </div>
                         <div class="toast-footer">
-                            <a><i class="far fa-heart"></i></a> <a><i class="far fa-comments"></i></a>
+                            <a><i class="far fa-heart"></i></a>
                         </div>
                     </div>
                 </div>
