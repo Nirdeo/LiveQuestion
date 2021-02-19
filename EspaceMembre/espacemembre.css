@@ -11,6 +11,10 @@ h1,h3 {
     text-align: center;
 }
 
+.container {
+    max-width: 500px;
+}
+
 /* NAVBAR */
 
 .navbar-light .navbar-brand {
