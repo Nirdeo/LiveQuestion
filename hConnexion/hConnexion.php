@@ -20,7 +20,7 @@
             <h3><a href="../PartieQuestions/ques-rep.php">Titre de la question</a></h3>
                <div class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
                   <div class="toast-header">
-                     <strong class="mr-auto"><a href="../EspaceMembre/espacemembre.php"><i class="fas fa-user-circle"></i> NomUtilisateur</a> | nbr avis récoltés | Catégories | <i class="far fa-heart"></i></strong>
+                     <strong class="mr-auto"><a href="../VueMembre/vuemembre.php"><i class="fas fa-user-circle"></i> NomUtilisateur</a> | nbr avis récoltés | Catégories | <i class="far fa-heart"></i></strong>
                      <small>Date de la question</small>
                   </div>
                   <div class="toast-body">
@@ -30,7 +30,7 @@
              <h3><a href="../PartieQuestions/ques-rep.php">Titre de la question</a></h3>
                <div class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
                   <div class="toast-header">
-                     <strong class="mr-auto"><a href="../EspaceMembre/espacemembre.php"><i class="fas fa-user-circle"></i> NomUtilisateur</a> | nbr avis récoltés | Catégories | <i class="far fa-heart"></i></strong>
+                     <strong class="mr-auto"><a href="../VueMembre/vuemembre.php"><i class="fas fa-user-circle"></i> NomUtilisateur</a> | nbr avis récoltés | Catégories | <i class="far fa-heart"></i></strong>
                      <small>Date de la question</small>
                   </div>
                   <div class="toast-body">
@@ -40,7 +40,7 @@
              <h3><a href="../PartieQuestions/ques-rep.php">Titre de la question</a></h3>
                <div class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
                   <div class="toast-header">
-                     <strong class="mr-auto"><a href="../EspaceMembre/espacemembre.php"><i class="fas fa-user-circle"></i> NomUtilisateur</a> | nbr avis récoltés | Catégories | <i class="far fa-heart"></i></strong>
+                     <strong class="mr-auto"><a href="../VueMembre/vuemembre.php"><i class="fas fa-user-circle"></i> NomUtilisateur</a> | nbr avis récoltés | Catégories | <i class="far fa-heart"></i></strong>
                      <small>Date de la question</small>
                   </div>
                   <div class="toast-body">
@@ -50,7 +50,7 @@
              <h3><a href="../PartieQuestions/ques-rep.php">Titre de la question</a></h3>
                <div class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
                   <div class="toast-header">
-                     <strong class="mr-auto"><a href="../EspaceMembre/espacemembre.php"><i class="fas fa-user-circle"></i> NomUtilisateur</a> | nbr avis récoltés | Catégories | <i class="far fa-heart"></i></strong>
+                     <strong class="mr-auto"><a href="../VueMembre/vuemembre.php"><i class="fas fa-user-circle"></i> NomUtilisateur</a> | nbr avis récoltés | Catégories | <i class="far fa-heart"></i></strong>
                      <small>Date de la question</small>
                   </div>
                   <div class="toast-body">
@@ -60,7 +60,7 @@
              <h3><a href="../PartieQuestions/ques-rep.php">Titre de la question</a></h3>
                <div class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
                   <div class="toast-header">
-                     <strong class="mr-auto"><a href="../EspaceMembre/espacemembre.php"><i class="fas fa-user-circle"></i> NomUtilisateur</a> | nbr avis récoltés | Catégories | <i class="far fa-heart"></i></strong>
+                     <strong class="mr-auto"><a href="../VueMembre/vuemembre.php"><i class="fas fa-user-circle"></i> NomUtilisateur</a> | nbr avis récoltés | Catégories | <i class="far fa-heart"></i></strong>
                      <small>Date de la question</small>
                   </div>
                   <div class="toast-body">
@@ -70,7 +70,7 @@
              <h3><a href="../PartieQuestions/ques-rep.php">Titre de la question</a></h3>
                <div class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
                   <div class="toast-header">
-                     <strong class="mr-auto"><a href="../EspaceMembre/espacemembre.php"><i class="fas fa-user-circle"></i> NomUtilisateur</a> | nbr avis récoltés | Catégories | <i class="far fa-heart"></i></strong>
+                     <strong class="mr-auto"><a href="../VueMembre/vuemembre.php"><i class="fas fa-user-circle"></i> NomUtilisateur</a> | nbr avis récoltés | Catégories | <i class="far fa-heart"></i></strong>
                      <small>Date de la question</small>
                   </div>
                   <div class="toast-body">
@@ -80,7 +80,7 @@
              <h3><a href="../PartieQuestions/ques-rep.php">Titre de la question</a></h3>
                <div class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
                   <div class="toast-header">
-                     <strong class="mr-auto"><a href="../EspaceMembre/espacemembre.php"><i class="fas fa-user-circle"></i> NomUtilisateur</a> | nbr avis récoltés | Catégories | <i class="far fa-heart"></i></strong>
+                     <strong class="mr-auto"><a href="../VueMembre/vuemembre.php"><i class="fas fa-user-circle"></i> NomUtilisateur</a> | nbr avis récoltés | Catégories | <i class="far fa-heart"></i></strong>
                      <small>Date de la question</small>
                   </div>
                   <div class="toast-body">
@@ -90,7 +90,7 @@
              <h3><a href="../PartieQuestions/ques-rep.php">Titre de la question</a></h3>
                <div class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
                   <div class="toast-header">
-                     <strong class="mr-auto"><a href="../EspaceMembre/espacemembre.php"><i class="fas fa-user-circle"></i> NomUtilisateur</a> | nbr avis récoltés | Catégories | <i class="far fa-heart"></i></strong>
+                     <strong class="mr-auto"><a href="../VueMembre/vuemembre.php"><i class="fas fa-user-circle"></i> NomUtilisateur</a> | nbr avis récoltés | Catégories | <i class="far fa-heart"></i></strong>
                      <small>Date de la question</small>
                   </div>
                   <div class="toast-body">
@@ -100,7 +100,7 @@
              <h3><a href="../PartieQuestions/ques-rep.php">Titre de la question</a></h3>
                <div class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
                   <div class="toast-header">
-                     <strong class="mr-auto"><a href="../EspaceMembre/espacemembre.php"><i class="fas fa-user-circle"></i> NomUtilisateur</a> | nbr avis récoltés | Catégories | <i class="far fa-heart"></i></strong>
+                     <strong class="mr-auto"><a href="../VueMembre/vuemembre.php"><i class="fas fa-user-circle"></i> NomUtilisateur</a> | nbr avis récoltés | Catégories | <i class="far fa-heart"></i></strong>
                      <small>Date de la question</small>
                   </div>
                   <div class="toast-body">
@@ -110,7 +110,7 @@
              <h3><a href="../PartieQuestions/ques-rep.php">Titre de la question</a></h3>
                <div class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
                   <div class="toast-header">
-                     <strong class="mr-auto"><a href="../EspaceMembre/espacemembre.php"><i class="fas fa-user-circle"></i> NomUtilisateur</a> | nbr avis récoltés | Catégories | <i class="far fa-heart"></i></strong>
+                     <strong class="mr-auto"><a href="../VueMembre/vuemembre.php"><i class="fas fa-user-circle"></i> NomUtilisateur</a> | nbr avis récoltés | Catégories | <i class="far fa-heart"></i></strong>
                      <small>Date de la question</small>
                   </div>
                   <div class="toast-body">
