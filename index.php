@@ -197,6 +197,7 @@
 					<button type="button" class="btn btn-light disabled">Still have unanswered questions?<span class="boutonRose"> Get in touch</span></button>
 				</div>
 			</div>
+        </div>
 
 		</section>
 
