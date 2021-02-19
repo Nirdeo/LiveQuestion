@@ -28,7 +28,7 @@
 				<input type="password" name="" placeholder="Enter votre mot de passe">
 				<input type="password" name="" placeholder="Confirmer votre mot de passe">
 				<input type="submit" name="" value="valider">
-				<p>Vous avez deja un compte ? <a href="#"> Se connecter !</a></p>
+				<p>Vous avez deja un compte ? <a href="connexion.php"> Se connecter !</a></p>
 			</form>
 		</div>
 </div>
