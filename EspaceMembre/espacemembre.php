@@ -15,9 +15,7 @@
 
 <body>
     <!-- NAVBAR -->
-    <?php
-    include ("../lqnavbar.php");
-    ?>
+    <?php include("../lqnavbar.php"); ?>
     <section>
         <div class="container">
             <h3>Espace Membre</h3>
