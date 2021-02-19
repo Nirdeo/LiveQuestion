@@ -25,7 +25,8 @@
 
 	if (isset($_POST["submit"])) {
 		$username = $_POST["username"];
-		$password = hash("sha256", $_POST["password"]);
+		// $password = hash("sha256", $_POST["password"]);
+		$password = $_POST["password"];
 		$query = $co->prepare('SELECT * FROM utilisateurs WHERE pseudo=:username and mot_de_passe=:pass');
 		$query->bindParam(":username", $username);
 		$query->bindParam(":pass", $password);
