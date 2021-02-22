@@ -207,6 +207,11 @@ header img {
 	background-color: #F90F7A;
 }
 
+.texteApp span{
+	background: linear-gradient(0, #FF00AD 30%, #F90F7A 30%);
+	font-size: 35px;
+}
+
 .borderBottomSection4{
 	height: 160px;
 	background-color: #F90F7A;
