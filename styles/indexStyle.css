@@ -245,7 +245,7 @@ header img {
 	text-align: center;
 }
 .iconApp button{
-	margin-top: 10px;
+	margin-top: 50px;
 	margin-left: 10px;
 }
 
@@ -259,7 +259,7 @@ header img {
 
 #Section5{
 	width: auto;
-	height: 900px;
+	height: auto;
 }
 .titreFaq{
 	width: auto;
@@ -279,7 +279,7 @@ header img {
 
 .questionFaq{
 	width: auto;
-	height: 500px;
+	height: auto;
 }
 .question1, .question2, .question3, .question4, .question5, .question6{
 	width: auto;
