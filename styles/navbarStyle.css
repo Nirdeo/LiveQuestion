@@ -12,6 +12,7 @@ header > .btn-secondary {
   .btn-secondary {
     margin-left: 39%;
     margin-top: -6% !important;
+    position: relative;
   }
   .navbar-brand {
     color: #fff;
@@ -24,6 +25,7 @@ header > .btn-secondary {
   .btn-secondary {
     margin-left: 74%;
     margin-top: -11% !important;
+    position: relative;
   }
   .navbar-brand {
     color: #fff;
@@ -35,6 +37,7 @@ header > .btn-secondary {
   .btn-secondary {
     margin-left: 87%;
     margin-top: -8% !important;
+    position: relative;
   }
   .navbar-brand {
     color: #fff;
@@ -47,6 +50,7 @@ header > .btn-secondary {
   .btn-secondary {
     margin-left: 76%;
     margin-top: -5% !important;
+    position: relative;
   }
   .navbar-brand {
     color: #fff;
