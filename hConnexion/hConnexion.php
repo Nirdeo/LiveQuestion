@@ -20,101 +20,101 @@
             <h3><a href="../PartieQuestions/ques-rep.php">Titre de la question</a></h3>
                <div class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
                   <div class="toast-header">
-                     <strong class="mr-auto"><a href="../VueMembre/vuemembre.php"><i class="fas fa-user-circle"></i> NomUtilisateur</a> | nbr avis récoltés | Catégories | <i class="far fa-heart"></i></strong>
-                     <small>Date de la question</small>
+                     <strong class="mr-auto"><a href="../VueMembre/vuemembre.php"><i class="fas fa-user-circle"></i> valy.soleil</a> | 300 avis récoltés | Philosophie, éthique, morale | <i class="far fa-heart"></i></strong>
+                     <small>20/04/2021</small>
                   </div>
                   <div class="toast-body">
-                     Question ?
+                     Si vous aviez la possibilité de recommencer votre vie ? Que feriez vous ?
                   </div>
                </div>
              <h3><a href="../PartieQuestions/ques-rep.php">Titre de la question</a></h3>
                <div class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
                   <div class="toast-header">
-                     <strong class="mr-auto"><a href="../VueMembre/vuemembre.php"><i class="fas fa-user-circle"></i> NomUtilisateur</a> | nbr avis récoltés | Catégories | <i class="far fa-heart"></i></strong>
-                     <small>Date de la question</small>
+                     <strong class="mr-auto"><a href="../VueMembre/vuemembre.php"><i class="fas fa-user-circle"></i> Kalvin</a> | 200 avis récoltés | Cinéma, télévision, médias | <i class="far fa-heart"></i></strong>
+                     <small>20/04/2021</small>
                   </div>
                   <div class="toast-body">
-                     Question ?
+                      Connaissez vous American Horror Story ?
                   </div>
                </div>
              <h3><a href="../PartieQuestions/ques-rep.php">Titre de la question</a></h3>
                <div class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
                   <div class="toast-header">
-                     <strong class="mr-auto"><a href="../VueMembre/vuemembre.php"><i class="fas fa-user-circle"></i> NomUtilisateur</a> | nbr avis récoltés | Catégories | <i class="far fa-heart"></i></strong>
-                     <small>Date de la question</small>
+                     <strong class="mr-auto"><a href="../VueMembre/vuemembre.php"><i class="fas fa-user-circle"></i> julessem</a> | 100 avis récoltés | Musique | <i class="far fa-heart"></i></strong>
+                     <small>18/04/2021</small>
                   </div>
                   <div class="toast-body">
-                     Question ?
+                     Quel est votre DJ préféré ?
                   </div>
                </div>
              <h3><a href="../PartieQuestions/ques-rep.php">Titre de la question</a></h3>
                <div class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
                   <div class="toast-header">
-                     <strong class="mr-auto"><a href="../VueMembre/vuemembre.php"><i class="fas fa-user-circle"></i> NomUtilisateur</a> | nbr avis récoltés | Catégories | <i class="far fa-heart"></i></strong>
-                     <small>Date de la question</small>
+                     <strong class="mr-auto"><a href="../VueMembre/vuemembre.php"><i class="fas fa-user-circle"></i> Nadim34</a> | 125 avis récoltés | Sport | <i class="far fa-heart"></i></strong>
+                     <small>17/04/2021</small>
                   </div>
                   <div class="toast-body">
-                     Question ?
+                     Quel est votre équipe de foot favorite ?
                   </div>
                </div>
              <h3><a href="../PartieQuestions/ques-rep.php">Titre de la question</a></h3>
                <div class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
                   <div class="toast-header">
-                     <strong class="mr-auto"><a href="../VueMembre/vuemembre.php"><i class="fas fa-user-circle"></i> NomUtilisateur</a> | nbr avis récoltés | Catégories | <i class="far fa-heart"></i></strong>
-                     <small>Date de la question</small>
+                     <strong class="mr-auto"><a href="../VueMembre/vuemembre.php"><i class="fas fa-user-circle"></i> Mattsev</a> | 160 avis récoltés | Sport, vélo | <i class="far fa-heart"></i></strong>
+                     <small>10/04/2021</small>
                   </div>
                   <div class="toast-body">
-                     Question ?
+                     qui saurait comment changer un pneu de vélo ?
                   </div>
                </div>
              <h3><a href="../PartieQuestions/ques-rep.php">Titre de la question</a></h3>
                <div class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
                   <div class="toast-header">
-                     <strong class="mr-auto"><a href="../VueMembre/vuemembre.php"><i class="fas fa-user-circle"></i> NomUtilisateur</a> | nbr avis récoltés | Catégories | <i class="far fa-heart"></i></strong>
-                     <small>Date de la question</small>
+                     <strong class="mr-auto"><a href="../VueMembre/vuemembre.php"><i class="fas fa-user-circle"></i> amandinelou</a> | 118 avis récoltés | Jeux vidéos | <i class="far fa-heart"></i></strong>
+                     <small>02/04/2021</small>
                   </div>
                   <div class="toast-body">
-                     Question ?
+                     Connaissez vous le jeu "The last of us" ?
                   </div>
                </div>
              <h3><a href="../PartieQuestions/ques-rep.php">Titre de la question</a></h3>
                <div class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
                   <div class="toast-header">
-                     <strong class="mr-auto"><a href="../VueMembre/vuemembre.php"><i class="fas fa-user-circle"></i> NomUtilisateur</a> | nbr avis récoltés | Catégories | <i class="far fa-heart"></i></strong>
-                     <small>Date de la question</small>
+                     <strong class="mr-auto"><a href="../VueMembre/vuemembre.php"><i class="fas fa-user-circle"></i> MattéoleplusBeau</a> | 234 avis récoltés | Voiture, cinema, action | <i class="far fa-heart"></i></strong>
+                     <small>23/03/2021</small>
                   </div>
                   <div class="toast-body">
-                     Question ?
+                     Qui attend Fast&Furious 9 avec impatience ?
                   </div>
                </div>
              <h3><a href="../PartieQuestions/ques-rep.php">Titre de la question</a></h3>
                <div class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
                   <div class="toast-header">
-                     <strong class="mr-auto"><a href="../VueMembre/vuemembre.php"><i class="fas fa-user-circle"></i> NomUtilisateur</a> | nbr avis récoltés | Catégories | <i class="far fa-heart"></i></strong>
-                     <small>Date de la question</small>
+                     <strong class="mr-auto"><a href="../VueMembre/vuemembre.php"><i class="fas fa-user-circle"></i> ValouCaira</a> | 178 avis récoltés | Manga, animée | <i class="far fa-heart"></i></strong>
+                     <small>20/03/2021</small>
                   </div>
                   <div class="toast-body">
-                     Question ?
+                     quel est votre manga favori ?
                   </div>
                </div>
              <h3><a href="../PartieQuestions/ques-rep.php">Titre de la question</a></h3>
                <div class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
                   <div class="toast-header">
-                     <strong class="mr-auto"><a href="../VueMembre/vuemembre.php"><i class="fas fa-user-circle"></i> NomUtilisateur</a> | nbr avis récoltés | Catégories | <i class="far fa-heart"></i></strong>
-                     <small>Date de la question</small>
+                     <strong class="mr-auto"><a href="../VueMembre/vuemembre.php"><i class="fas fa-user-circle"></i> Tristan69</a> | 94 avis récoltés | Voiture | <i class="far fa-heart"></i></strong>
+                     <small>15/03/2021</small>
                   </div>
                   <div class="toast-body">
-                     Question ?
+                     qui aurait une voiture a vendre ?
                   </div>
                </div>
              <h3><a href="../PartieQuestions/ques-rep.php">Titre de la question</a></h3>
                <div class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
                   <div class="toast-header">
-                     <strong class="mr-auto"><a href="../VueMembre/vuemembre.php"><i class="fas fa-user-circle"></i> NomUtilisateur</a> | nbr avis récoltés | Catégories | <i class="far fa-heart"></i></strong>
-                     <small>Date de la question</small>
+                     <strong class="mr-auto"><a href="../VueMembre/vuemembre.php"><i class="fas fa-user-circle"></i> Skatouzeman</a> | 126 avis récoltés | Sport, skate | <i class="far fa-heart"></i></strong>
+                     <small>02/03/2021</small>
                   </div>
                   <div class="toast-body">
-                     Question ?
+                     vous auriez une marque skate a me conseiller pour débuter ?
                   </div>
             </div>
          </div>
