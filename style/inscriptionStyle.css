@@ -15,7 +15,7 @@ body{
 	background-color: #1A2D34;
 }
 .loginBox{
-	width: 400px;
+	width: 500px;
 	height: 590px;
 	background: #FFF;
 	color: #F90F7A;
@@ -39,6 +39,7 @@ body{
 
 h1{
 	margin: 0;
+	padding-bottom: 30px;
 	text-align: center;
 	font-size: 22px;
 	color: #1A2D34;	
