@@ -7,10 +7,12 @@ p {
 body {
 	background-color: #eee;
 }
-h1,h3 {
+h1 {
     text-align: center;
 }
-
+span{
+	color: red;
+}
 .container {
     max-width: 500px;
 }

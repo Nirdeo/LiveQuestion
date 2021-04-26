@@ -18,8 +18,7 @@
     <?php include("../lqnavbar.php"); ?>
     <section>
         <div class="container">
-            <h3>Espace Membre</h3>
-            <h1>Bienvenue dans votre espace membre NomUtilisateur !</h1><br>
+            <h1>Bienvenue dans votre espace membre <span class="NomUtili">NomUtilisateur !</span></h1><br>
             <!-- CARD -->
             <div class="card mb-3">
                 <h3 class="card-header">Modifier mes informations <i class="fas fa-cog"></i></h3>
