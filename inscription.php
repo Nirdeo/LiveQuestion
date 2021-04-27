@@ -12,34 +12,6 @@
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
    </head>
    <body>
-      <?php
-         require("PHP/connexion.php");
-
-         if (isset($_POST["submit"])) {
-         	if (isset($_POST["username"], $_POST["email"], $_POST["genre"], $_POST["password"], $_POST["passwordC"])) {
-         		if ($_POST["password"] == $_POST["passwordC"]) {
-         			$username = $_POST["username"];
-         			$email = $_POST["email"];
-         			$genre = $_POST["genre"];
-         			$password = hash("sha256", $_POST["password"]);
-         			$date = date('Y-m-d H:i:s');
-         			$co = connexionBdd();
-         			$query = $co->prepare("INSERT into utilisateurs (pseudo, email, mot_de_passe, genre, date_inscription, role) VALUES (:username, :email, :pass, :genre, :dateAjd, 'membre')");
-         			$query->bindParam(":username", $username);
-         			$query->bindParam(":email", $email);
-         			$query->bindParam(":genre", $genre);
-         			$query->bindParam(":pass", $password);
-         			$query->bindParam(":dateAjd", $date);
-         			$query->execute();
-         			if ($query) {
-         				echo "Inscription validée";
-         			}
-         		}else {
-         			echo "Les mots de passes ne correspondent pas";
-         		}
-         	}
-         }else {
-         	?>
       <div class="wrapper">
          <div class="loginBox">
             <h1>S'inscrire</h1>
@@ -60,7 +32,4 @@
             </form>
          </div>
       </div>
-      <?php
-         }
-         ?>
 </html>

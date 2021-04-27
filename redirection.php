@@ -7,14 +7,14 @@
    </head>
    <body>
       <?php
-session_start();
+      session_start();
 
-if (!isset($_SESSION["username"])) {
-    header("Location: connexion.php");
-} else {
-    header("Location: hConnexion/hConnexion.php");
-}
-?>
+      if (!isset($_SESSION["pseudo"])) {
+         header("Location: connexion.php");
+      } else {
+         header("Location: hConnexion/hConnexion.php");
+      }
+      ?>
 
    </body>
 </html>
