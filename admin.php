@@ -13,16 +13,17 @@
    </head>
    <body>
       <!-- NAVBAR -->
+    <?php
+    session_start();
+    if (!isset($_SESSION["pseudo"]) || $_SESSION["pseudo_role"] != "admin") {
+       header("Location: connexion.php");
+       exit();
+    }
+    ?>
     <?php include("lqnavbar.php"); ?>
       <section>
          <div class="container">
          <?php
-
-         session_start();
-         if (!isset($_SESSION["pseudo"]) || $_SESSION["pseudo_role"] != "admin") {
-            header("Location: connexion.php");
-            exit();
-         }
 
          require("DB/connexion.php");
 

@@ -13,7 +13,6 @@
    </head>
    <body>
       <!-- NAVBAR -->
-      <?php include("lqnavbar.php"); ?>
       <?php
       session_start();
       if (!isset($_SESSION["pseudo"])) {
@@ -34,6 +33,7 @@
          $modifiable = false;
       }
 
+      include("lqnavbar.php");
 
       require("DB/connexion.php");
 
