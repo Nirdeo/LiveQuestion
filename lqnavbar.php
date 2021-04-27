@@ -20,6 +20,11 @@
             <div class="dropdown-menu">
                <a class="dropdown-item" href="profil.php">Accéder à mon profil</a>
                <a class="dropdown-item" href="logout.php">Déconnexion</a>
+               <?php
+               if ($_SESSION["pseudo_role"] == "admin") {
+                  echo "<a class='dropdown-item' href='admin.php'>Page Admin</a>";
+               }
+               ?>
             </div>
          </li>
       </ul>
