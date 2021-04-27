@@ -12,12 +12,42 @@
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
    </head>
    <body>
+      <?php
+      require("DB/connexion.php");
+      session_start();
+      $co = connexionBdd();
+      $message = "";
+
+      if (isset($_POST["submit"])) {
+         $pseudo = $_POST["pseudo"];
+         $password = hash('sha256', $_POST["password"]);
+
+         $query = $co->prepare("SELECT * FROM utilisateurs WHERE pseudo=:pseudo and mot_de_passe=:password");
+         $query->bindParam(":pseudo", $pseudo);
+         $query->bindParam(":password", $password);
+         $query->execute();
+         $result = $query->fetchAll();
+         $rows = $query->rowCount();
+         if ($rows == 1) {
+               $_SESSION["pseudo"] = $pseudo;
+               $_SESSION["pseudo_id"] = $result[0]["id"];
+               $_SESSION["pseudo_role"] = $result[0]["role"];
+               header("Location: accueil.php");
+         } else {
+               $message = "Le nom d'utilisateur ou mot de passe est incorrect";
+         }
+      }
+
+
+
+      ?>
       <div class="wrapper">
          <div class="loginBox">
             <h1>Se connecter</h1>
-            <form action="" method="post" name="login">
+            <h3><?php echo $message; ?></h3>
+            <form action="" method="post">
                <p>Nom d'Utilisateur</p>
-               <input type="text" name="username" placeholder="Enter votre nom d'utilisateur">
+               <input type="text" name="pseudo" placeholder="Enter votre nom d'utilisateur">
                <p>mot de passe</p>
                <input type="password" name="password" placeholder="Enter votre mot de passe">
                <input type="submit" name="submit" value="valider">

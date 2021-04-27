@@ -1,7 +1,5 @@
-<head>
-   <link rel="stylesheet" type="text/css" href="styles/navbarStyle.css">
-</head>
-<
+<link rel="stylesheet" type="text/css" href="styles/navbarStyle.css">
+
 <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
    <a class="navbar-brand" href="index.php">Saint Vincent BTS1</a>
    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor"

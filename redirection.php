@@ -12,7 +12,7 @@
       if (!isset($_SESSION["pseudo"])) {
          header("Location: connexion.php");
       } else {
-         header("Location: hConnexion/hConnexion.php");
+         header("Location: accueil.php");
       }
       ?>
 

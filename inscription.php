@@ -12,11 +12,98 @@
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
    </head>
    <body>
+      <?php
+
+      require("DB/connexion.php");
+
+      function has_special_chars($string) {
+         return preg_match('/[^a-zA-Z\d]/', $string);
+      }
+
+      function passwordVerification($pass) {
+         if (strlen($pass) >= 8 && has_special_chars($pass) > 0) {
+            return true;
+         } else {
+            return false;
+         }
+      }
+
+      function userExist($user) {
+         $co = connexionBdd();
+         $query = $co->prepare("SELECT * FROM utilisateurs WHERE pseudo=:pseudo");
+         $query->bindParam(":pseudo", $user);
+         $query->execute();
+         $row = $query->rowCount();
+         if ($row > 0) {
+            return true;
+         } else {
+            return false;
+         }
+      }
+
+      function emailExist($mail) {
+         $co = connexionBdd();
+         $query = $co->prepare("SELECT * FROM utilisateurs WHERE email=:email");
+         $query->bindParam(":email", $mail);
+         $query->execute();
+         $row = $query->rowCount();
+         if ($row > 0) {
+            return true;
+         } else {
+            return false;
+         }
+      }
+
+      $message = "";
+
+      if (isset($_POST["submit"])) {
+         if (isset($_POST["pseudo"], $_POST["email"], $_POST["password"], $_POST["passwordverif"], $_POST["genre"])) {
+            $pseudo = $_POST["pseudo"];
+            $email = $_POST["email"];
+            $password = $_POST["password"];
+            $passwordverif = $_POST["passwordverif"];
+            $passwordhash = hash('sha256', $_POST["password"]);
+            $genre = $_POST["genre"];
+            date_default_timezone_set('Europe/Paris');
+            $date = date('Y-m-d H:i:s');
+            if ($password == $passwordverif) {
+                  if (passwordVerification($password)) {
+                     if (userExist($pseudo) == false) {
+                        if (emailExist($email) == false) {
+                              $co = connexionBdd();
+                              $query = $co->prepare("INSERT into utilisateurs (pseudo, email, mot_de_passe, avatar, genre, date_inscription, role) VALUES (:pseudo, :email, :password, '', :genre, :date, 'membre')");
+                              $query->bindParam(":pseudo", $pseudo);
+                              $query->bindParam(":email", $email);
+                              $query->bindParam(":password", $passwordhash);
+                              $query->bindParam(":genre", $genre);
+                              $query->bindParam(":date", $date);
+                              $query->execute();
+                              if ($query) {
+                                 $message = "successfully registered";
+                              }
+                        } else {
+                              $message = "this email is already used";
+                        }
+                     } else {
+                        $message = "this pseudo is already used";
+                     }
+                  } else {
+                     $message = "password less than 8 or do not have any special characters";
+                  }
+            } else {
+                  $message = "password dont match";
+            }
+         }
+      }
+
+      ?>
+
       <div class="wrapper">
          <div class="loginBox">
             <h1>S'inscrire</h1>
-            <form action="" method="post" name="register">
-               <input type="text" name="username" placeholder="Enter votre nom d'utilisateur">
+            <h3><?php echo $message; ?></h3>
+            <form action="" method="post">
+               <input type="text" name="pseudo" placeholder="Enter votre nom d'utilisateur">
                <input type="email" name="email" placeholder="Enter votre Adresse mail">
                <p>Genre :</p>
                <div class="radioInput">
@@ -26,7 +113,7 @@
                   <input type="radio" name="genre" value="F">
                </div>
                <input type="password" name="password" placeholder="Enter votre mot de passe">
-               <input type="password" name="passwordC" placeholder="Confirmer votre mot de passe">
+               <input type="password" name="passwordverif" placeholder="Confirmer votre mot de passe">
                <input type="submit" name="submit" value="valider">
                <p>Vous avez deja un compte ? <a href="connexion.php"> Se connecter !</a></p>
             </form>

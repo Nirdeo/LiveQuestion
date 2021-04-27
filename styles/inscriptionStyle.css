@@ -45,6 +45,11 @@ h1 {
   color: #1a2d34;
 }
 
+h3 {
+  text-align: center;
+  color: red;
+}
+
 .loginBox p {
   margin: 0;
   padding: 0;
