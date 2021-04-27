@@ -4,70 +4,74 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>LiveQuestion</title>
-      <link rel="stylesheet" type="text/css" href="styles/accueil.css">
+      <link rel="stylesheet" type="text/css" href="styles/nouvellequestion.css">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
       <script type="text/javascript" src="script.js"></script>
-      <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
    </head>
-    <body>
-        <?php
-        session_start();
-        if (!isset($_SESSION["pseudo"])) {
-            header("Location: connection.php");
-            exit();
-        }
+   <body>
+      <?php
+         session_start();
+         if (!isset($_SESSION["pseudo"])) {
+             header("Location: connection.php");
+             exit();
+         }
 
-        require("DB/connexion.php");
-        $message = "";
+         require("DB/connexion.php");
+         $message = "";
 
-        $co = connexionBdd();
+         $co = connexionBdd();
 
-        if (isset($_POST["submit"])) {
-            if (isset($_POST["title"], $_POST["categorie"])) {
-                $pseudo_id = $_SESSION["pseudo_id"];
-                $title = $_POST["title"];
-                $categorie = $_POST["categorie"];
-                date_default_timezone_set('Europe/Paris');
-                $date = date('Y-m-d H:i:s');
+         if (isset($_POST["submit"])) {
+             if (isset($_POST["title"], $_POST["categorie"])) {
+                 $pseudo_id = $_SESSION["pseudo_id"];
+                 $title = $_POST["title"];
+                 $categorie = $_POST["categorie"];
+                 date_default_timezone_set('Europe/Paris');
+                 $date = date('Y-m-d H:i:s');
 
-                $query = $co->prepare("INSERT into questions (titre, categorie_id, auteur_id, date_creation) VALUES (:title, :categorie, :pseudo_id, :date)");
-                $query->bindParam(":title", $title);
-                $query->bindParam(":categorie", $categorie);
-                $query->bindParam(":pseudo_id", $pseudo_id);
-                $query->bindParam(":date", $date);
-                $query->execute();
-                if ($query) {
-                    $message = "Your question have been submited";
-                }
-            }
-        }
-
-
-        ?>
-
-        <?php include("lqnavbar.php"); ?>
-        <h3>New question:</h3>
-        <form action="" method="POST">
-            <label for="titre">Title:</label>
-            <input type="text" name="title">
-            <label for="categorie">Categorie:</label>
-            <select name="categorie">
-                <?php
-                $query = $co->prepare("SELECT * FROM categories");
-                $query->execute();
-                $results = $query->fetchAll();
-                foreach ($results as $result) {
-                    echo "<option value='$result[0]'>$result[1]</option>";
-                }
-                ?>
+                 $query = $co->prepare("INSERT into questions (titre, categorie_id, auteur_id, date_creation) VALUES (:title, :categorie, :pseudo_id, :date)");
+                 $query->bindParam(":title", $title);
+                 $query->bindParam(":categorie", $categorie);
+                 $query->bindParam(":pseudo_id", $pseudo_id);
+                 $query->bindParam(":date", $date);
+                 $query->execute();
+                 if ($query) {
+                     $message = "Votre question a bien été envoyé !";
+                 }
+             }
+         }
+         ?>
+      <?php include("lqnavbar.php"); ?>
+      <h3>Ajouter une nouvelle question:</h3>
+      <form action="" method="POST">
+         <div class="form-outline mb-4">
+            <label class="col-form-label" for="title">Intitulé de la question</label>
+            <input type="text" name="title" id="title" class="form-control">
+         </div>
+         <div class="form-outline mb-4">
+            <label class="form-label" for="categorie">Catégorie de la question</label>
+            <select class="custom-select" name="categorie" id="categorie">
+            <?php
+               $query = $co->prepare("SELECT * FROM categories");
+               $query->execute();
+               $results = $query->fetchAll();
+               foreach ($results as $result) {
+                   echo "<option value='$result[0]'>$result[1]</option>";
+               }
+               ?>
             </select>
-            <input type="submit" name="submit" value="submit">
-        </form>
-        <p><?php echo $message; ?></p>
-
-
-    </body>
+         </div>
+         <div class="form-check d-flex justify-content-center mb-4">
+            <label class="form-check-label" for="box">
+            Je suis sûr de vouloir envoyer ma question
+            </label><br>
+            <input class="form-check-input me-2" type="checkbox" value="" id="box" name="box" required>
+         </div>
+         <input type="submit" name="submit" class="btn btn-primary btn-block mb-4" value="Envoyer">
+      </form>
+      <p><?php echo $message; ?></p>
+   </body>
 </html>
