@@ -1,27 +1,25 @@
 /* GENERAL */
 
 p {
-	font-size: 15px;
+  font-size: 15px;
 }
 
 body {
-	background-color: #eee;
+  background-color: #eee;
 }
-
 
 /* NAVBAR */
 
 .navbar-light .navbar-brand {
-	color: #F90F7A;
+  color: #f90f7a;
 }
 
 .navbar-light .navbar-nav .nav-link {
-	color: black;
+  color: black;
 }
-
 
 /* TOAST */
 
 .toast {
-	max-width: none;
+  max-width: none;
 }

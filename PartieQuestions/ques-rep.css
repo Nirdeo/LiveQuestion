@@ -1,36 +1,36 @@
 /* GENERAL */
 
 p {
-    font-size: 15px;
+  font-size: 15px;
 }
 
 body {
-    background-color: #eee;
+  background-color: #eee;
 }
 
 .roselq {
-    color: #F90F7A;
+  color: #f90f7a;
 }
 
 /* NAVBAR */
 
 .navbar-light .navbar-brand {
-    color: #F90F7A;
+  color: #f90f7a;
 }
 
 .navbar-light .navbar-nav .nav-link {
-    color: black;
+  color: black;
 }
 
 /* TOAST */
 
 .container > .toast {
-    max-width: none;
+  max-width: none;
 }
 
 /* BUTTON */
 
 .rosebutton {
-    background-color: #F90F7A;
-    color: #fff;
+  background-color: #f90f7a;
+  color: #fff;
 }
