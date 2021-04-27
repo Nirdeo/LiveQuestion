@@ -73,7 +73,9 @@
             <?php
 
             $co = connexionBdd();
-            $query = $co->query("SELECT * FROM questions");
+            $query = $co->prepare("SELECT * FROM questions WHERE auteur_id=:id");
+            $query->bindParam(":id", $id);
+            $query->execute();
             $results = $query->fetchAll();
             foreach (array_reverse($results) as $result) {
                $query = $co->prepare("SELECT count(*) from repondre WHERE questions_id=:question_id");
