@@ -1,16 +1,18 @@
 /* GENERAL */
 
 p {
-	font-size: 15px;
+  font-size: 15px;
 }
 
 body {
-	background-color: #eee;
+  background-color: #eee;
 }
-h1,h3 {
-    text-align: center;
+h1 {
+  text-align: center;
 }
-
+span {
+  color: red;
+}
 .container {
-    max-width: 500px;
+  max-width: 500px;
 }
