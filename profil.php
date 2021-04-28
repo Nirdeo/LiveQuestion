@@ -68,6 +68,39 @@
             <p>Genre: <?php if ($result['genre'] == "H") { echo "Homme"; } else { echo "Femme"; }; ?></p>
             <p>Date d'inscription: <?php echo $result['date_inscription']; ?></p>
             <br>
+            <?php
+
+            if ($modifiable) {
+               ?>
+               <h2>Supprimer mon compte:</h2>
+               <form action="" method="POST">
+                  <input type="submit" name="submitDelete" value="Supprimer">
+               </form>
+               <?php
+            }
+
+            if (isset($_POST["submitDelete"])) {
+               $query = $co->prepare("DELETE FROM repondre WHERE utilisateurs_id=:pseudo_id");
+               $query->bindParam(":pseudo_id", $id);
+               $query->execute();
+       
+               $query = $co->prepare("DELETE FROM questions WHERE auteur_id=:pseudo_id");
+               $query->bindParam(":pseudo_id", $id);
+               $query->execute();
+               
+               $query = $co->prepare("DELETE FROM utilisateurs WHERE id=:pseudo_id");
+               $query->bindParam(":pseudo_id", $id);
+               $query->execute();
+               if ($query) {
+                   $_SESSION = array();
+                   sleep(2);
+                   header("Location: index.php");
+               }
+            }
+            
+
+            ?>
+            <br>
             <h3>Questions Posées:</h3>
             <br>
             <?php

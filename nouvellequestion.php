@@ -64,12 +64,6 @@
                ?>
             </select>
          </div>
-         <div class="form-check d-flex justify-content-center mb-4">
-            <label class="form-check-label" for="box">
-            Je suis sûr de vouloir envoyer ma question
-            </label><br>
-            <input class="form-check-input me-2" type="checkbox" value="" id="box" name="box" required>
-         </div>
          <input type="submit" name="submit" class="btn btn-primary btn-block mb-4" value="Envoyer">
       </form>
       <p><?php echo $message; ?></p>
