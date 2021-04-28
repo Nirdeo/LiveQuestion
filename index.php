@@ -82,7 +82,7 @@
 				</div>
 				<div class="carousel-inner">
 					<div class="carousel-item active">
-						<img src="img/step-2.jpg" alt="Los Angeles">
+						<img src="img/step-2.jpg" alt="1ere page du carousel">
 						<div class="subtitles">
 							<h2>Praesent vitae velit tristique <span>old alos</span></h2>
 							<p>Ned ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
@@ -107,7 +107,7 @@
 								<p>"Aliquam gravida magna ut"</p>
 							</div>
 						</div>
-						<img class="inv" src="img/step-3.jpg" alt="Chicago">
+						<img class="inv" src="img/step-3.jpg" alt="2eme page du carousel">
 					</div>
 					<div class="carousel-item">
 						<div class="subtitles-inv">
@@ -122,7 +122,7 @@
 							</div>
 
 						</div>
-						<img class="inv" src="img/step-4.png" alt="New York">
+						<img class="inv" src="img/step-4.png" alt="3eme page du carousel">
 					</div>
 				</div>
 			</div>
