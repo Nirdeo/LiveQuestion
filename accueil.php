@@ -13,9 +13,6 @@
       <link rel="icon" href="img/favicon.png" type="image/png">
    </head>
    <body>
-      <script type="text/javascript">
-         alert("Bienvenue !\nIci vous retrouvez l'ensemble des questions !");
-      </script>
       <?php
 
       session_start();
