@@ -28,5 +28,5 @@ h3 {
 
 /* TOAST */
 .toast {
-  max-width: none;
+  max-width: 100% !important;
 }

@@ -10,6 +10,7 @@
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
       <script type="text/javascript" src="script/indexScript.js"></script>
+      <link rel="icon" href="img/favicon.png" type="image/png">
    </head>
    <body>
       <header>

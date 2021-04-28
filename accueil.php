@@ -9,10 +9,13 @@
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
       <script type="text/javascript" src="script.js"></script>
-      <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
+      <link rel="icon" href="img/favicon.png" type="image/png">
    </head>
    <body>
+      <script type="text/javascript">
+         alert("Bienvenue !\nIci vous retrouvez l'ensemble des questions !");
+      </script>
       <?php
 
       session_start();
@@ -32,7 +35,7 @@
          $result = $query->fetch();
          return $result["nom"];
       }
- 
+
       function getAuteur($id) {
          $co = connexionBdd();
          $query = $co->prepare("SELECT pseudo FROM utilisateurs WHERE id=:id");
@@ -45,13 +48,13 @@
 
       ?>
 
-
       <!-- NAVBAR -->
       <?php include("lqnavbar.php"); ?>
       <section>
          <div class="container">
+         <h3>Voici la liste de toutes les questions <?php echo $_SESSION["pseudo"]; ?> !</h3>
             <?php
-            
+
             $co = connexionBdd();
             $query = $co->query("SELECT * FROM questions");
             $results = $query->fetchAll();

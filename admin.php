@@ -10,6 +10,7 @@
       <link rel="stylesheet" type="text/css" href="styles/admin.css">
       <script src="script.js"></script>
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
+      <link rel="icon" href="img/favicon.png" type="image/png">
    </head>
    <body>
       <!-- NAVBAR -->

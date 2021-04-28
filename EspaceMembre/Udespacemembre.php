@@ -11,6 +11,7 @@
       <script type="text/javascript" src="script.js"></script>
       <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
+      <link rel="icon" href="img/favicon.png" type="image/png">
    </head>
    <body>
       <!-- NAVBAR -->
