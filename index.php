@@ -25,7 +25,7 @@
                      malesuada <br> dapibus. Morbi eleifend tellus nisi, sed ullamcorper <br> mi tincidunt faucibus.
                      Mauris justo tortor, tempor <br> ut odio in, dictum malesuada eros.
                   </p>
-                  <a href="" class="btn bouton headerBouton">Bouton CTA</a>
+                  <a href="" class="btn bouton headerBouton"><span class="headButton">Bouton CTA</span></a>
                </div>
                <div class="col-md-6">
                   <img src="img/step-1.png">

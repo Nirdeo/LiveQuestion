@@ -8,12 +8,20 @@ header {
 }
 
 .bouton {
+  width: 200px;
+  height: 45px;
   border-radius: 50px !important;
   padding-left: 15px !important;
   padding-right: 15px !important;
   background-color: #f90f7a !important;
   color: white !important;
 }
+
+.headButton{
+  font-size: 19px;
+  font-weight: bold;
+}
+
 header img {
   width: 100%;
 }
@@ -40,6 +48,18 @@ header img {
   font-size: 60px;
 }
 
+@media (max-width: 600px) {
+  h1 {
+    text-align: center;
+  }
+  .headerBlock p{
+    text-align: center;
+  }
+  .bouton{
+    margin-left: 130px;
+  }
+}
+
 /*SECTION 1*/
 
 #section1 {
@@ -61,6 +81,12 @@ header img {
 
 #section1 img {
   margin-bottom: 5%;
+}
+
+@media (max-width: 600px) {
+   #section1{
+    margin-left: 50px;
+  }
 }
 
 /* SECTION 2 */
@@ -96,6 +122,10 @@ header img {
 #section2 .subtitles h2 {
   text-align: initial;
   width: 54%;
+}
+#section2 .subtitles span {
+  background: linear-gradient(0, #ff00ad 30%, #FFF 30%);
+  font-size: 35px;
 }
 #section2 .subtitles p {
   text-align: initial;
