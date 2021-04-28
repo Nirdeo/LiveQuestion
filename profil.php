@@ -56,6 +56,21 @@
          return $result["pseudo"];
       }
 
+
+      function changeLikeIcon($like_question_id) {
+         $co = connexionBdd();
+         $query = $co->prepare("SELECT * FROM likes WHERE utilisateur_id=:pseudo_id AND question_id=:question_id");
+         $query->bindParam(":question_id", $like_question_id);
+         $query->bindParam(":pseudo_id", $_SESSION["pseudo_id"]);
+         $query->execute();
+         $row = $query->rowCount();
+         if ($row == 1) {
+            return "fas fa-heart";
+         } else {
+            return "far fa-heart";
+         }
+      }
+
       $co = connexionBdd();
 
       $query = $co->prepare("SELECT * FROM utilisateurs WHERE id=:id");
@@ -68,6 +83,44 @@
             <h3>Profil de <?php echo $result['pseudo']; ?></h3>
             <p>Genre: <?php if ($result['genre'] == "H") { echo "Homme"; } else { echo "Femme"; }; ?></p>
             <p>Date d'inscription: <?php echo $result['date_inscription']; ?></p>
+            <br>
+            <?php
+
+            if ($modifiable) {
+               ?>
+               <h2>Supprimer mon compte:</h2>
+               <form action="" method="POST">
+                  <input type="submit" name="submitDelete" value="Supprimer">
+               </form>
+               <?php
+            }
+
+            if (isset($_POST["submitDelete"])) {
+
+               $query = $co->prepare("DELETE FROM likes WHERE utilisateur_id=:pseudo_id");
+               $query->bindParam(":pseudo_id", $id);
+               $query->execute();
+
+               $query = $co->prepare("DELETE FROM repondre WHERE utilisateurs_id=:pseudo_id");
+               $query->bindParam(":pseudo_id", $id);
+               $query->execute();
+       
+               $query = $co->prepare("DELETE FROM questions WHERE auteur_id=:pseudo_id");
+               $query->bindParam(":pseudo_id", $id);
+               $query->execute();
+               
+               $query = $co->prepare("DELETE FROM utilisateurs WHERE id=:pseudo_id");
+               $query->bindParam(":pseudo_id", $id);
+               $query->execute();
+               if ($query) {
+                   $_SESSION = array();
+                   sleep(2);
+                   header("Location: index.php");
+               }
+            }
+            
+
+            ?>
             <br>
             <h3>Questions Posées:</h3>
             <br>
@@ -83,9 +136,14 @@
                $query->bindParam(":question_id", $result[0]);
                $query->execute();
                $responseNumber = $query->fetch();
+               $query = $co->prepare("SELECT * from likes WHERE question_id=:question_id");
+               $query->bindParam(":question_id", $result[0]);
+               $query->execute();
+               $likesNumber = $query->rowCount();
+               $likeIcon = changeLikeIcon($result[0]);
                echo "<div class='toast show' role='alert' aria-live='assertive' aria-atomic='true'>",
                   "<div class='toast-header'>",
-                  "<strong class='mr-auto'><a href=''>" . getAuteur($result[3]) . "</a> | $responseNumber[0] réponses | " . getCateg($result[2]) . " | <i class='far fa-heart'></i></strong>
+                  "<strong class='mr-auto'><a href=''>" . getAuteur($result[3]) . "</a> | $responseNumber[0] réponses | " . getCateg($result[2]) . " | <a href='like.php?question_id=$result[0]'><i class='$likeIcon'></i></a> $likesNumber</strong>
                   <small>$result[4]</small>",
                   "</div>",
                   "<div class='toast-body'>",

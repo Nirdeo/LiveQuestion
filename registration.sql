@@ -3,9 +3,9 @@
 -- http://www.phpmyadmin.net
 --
 -- Client :  localhost
--- Généré le :  Dim 28 Février 2021 à 18:29
+-- Généré le :  Mer 28 Avril 2021 à 14:54
 -- Version du serveur :  5.7.11
--- Version de PHP :  7.2.7
+-- Version de PHP :  5.6.18
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -31,6 +31,26 @@ CREATE TABLE `categories` (
   `nom` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Contenu de la table `categories`
+--
+
+INSERT INTO `categories` (`id`, `nom`) VALUES
+(1, 'A'),
+(2, 'B');
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `likes`
+--
+
+CREATE TABLE `likes` (
+  `id` int(11) NOT NULL,
+  `utilisateur_id` int(11) NOT NULL,
+  `question_id` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
 -- --------------------------------------------------------
 
 --
@@ -44,6 +64,13 @@ CREATE TABLE `questions` (
   `auteur_id` int(11) NOT NULL,
   `date_creation` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Contenu de la table `questions`
+--
+
+INSERT INTO `questions` (`id`, `titre`, `categorie_id`, `auteur_id`, `date_creation`) VALUES
+(8, 'test', 1, 1, '2021-04-28 16:17:55');
 
 -- --------------------------------------------------------
 
@@ -76,6 +103,14 @@ CREATE TABLE `utilisateurs` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
+-- Contenu de la table `utilisateurs`
+--
+
+INSERT INTO `utilisateurs` (`id`, `pseudo`, `email`, `mot_de_passe`, `avatar`, `genre`, `date_inscription`, `role`) VALUES
+(1, 'Tristan', 'tristan@gmail.com', '29c111bb6f020dd69cfc15790dd110826135ec7cc773c18b3450537590124846', '', 'H', '2021-04-27 00:00:00', 'admin'),
+(4, 'test', 'test@gmail.com', '29c111bb6f020dd69cfc15790dd110826135ec7cc773c18b3450537590124846', '', 'H', '2021-04-28 16:40:55', 'membre');
+
+--
 -- Index pour les tables exportées
 --
 
@@ -84,6 +119,14 @@ CREATE TABLE `utilisateurs` (
 --
 ALTER TABLE `categories`
   ADD PRIMARY KEY (`id`);
+
+--
+-- Index pour la table `likes`
+--
+ALTER TABLE `likes`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `utilisateur_id` (`utilisateur_id`),
+  ADD KEY `question_id` (`question_id`);
 
 --
 -- Index pour la table `questions`
@@ -114,20 +157,32 @@ ALTER TABLE `utilisateurs`
 -- AUTO_INCREMENT pour la table `categories`
 --
 ALTER TABLE `categories`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+--
+-- AUTO_INCREMENT pour la table `likes`
+--
+ALTER TABLE `likes`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 --
 -- AUTO_INCREMENT pour la table `questions`
 --
 ALTER TABLE `questions`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 --
 -- AUTO_INCREMENT pour la table `utilisateurs`
 --
 ALTER TABLE `utilisateurs`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 --
 -- Contraintes pour les tables exportées
 --
+
+--
+-- Contraintes pour la table `likes`
+--
+ALTER TABLE `likes`
+  ADD CONSTRAINT `question` FOREIGN KEY (`question_id`) REFERENCES `questions` (`id`),
+  ADD CONSTRAINT `utilisateur` FOREIGN KEY (`utilisateur_id`) REFERENCES `utilisateurs` (`id`);
 
 --
 -- Contraintes pour la table `questions`
