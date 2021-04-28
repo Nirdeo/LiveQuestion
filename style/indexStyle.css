@@ -54,12 +54,14 @@ header img {
 
 #section1 p {
 	text-align: initial;
-	width: 110%;
+	width: 100%;
 	color: #737176;
 }
+
 #section1 h5 {
-	width: 110%;
+	width: 100%;
 }
+
 #section1 .col-md-3 {
 	margin-left: 8%;
 }
