@@ -7,7 +7,7 @@ body {
   width: 100%;
   height: 100%;
   overflow: hidden;
-  background-color: #1a2d34;
+  background: linear-gradient(0.25turn, #1a2d34, #1a2d34, #f90f7a);
 }
 .fondDeConnexion {
   width: 100%;
@@ -16,7 +16,7 @@ body {
 }
 .loginBox {
   width: 500px;
-  height: 590px;
+  height: 600px;
   background: #fff;
   color: #f90f7a;
   top: 50%;
