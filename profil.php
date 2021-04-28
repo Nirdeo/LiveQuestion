@@ -55,6 +55,21 @@
          return $result["pseudo"];
       }
 
+
+      function changeLikeIcon($like_question_id) {
+         $co = connexionBdd();
+         $query = $co->prepare("SELECT * FROM likes WHERE utilisateur_id=:pseudo_id AND question_id=:question_id");
+         $query->bindParam(":question_id", $like_question_id);
+         $query->bindParam(":pseudo_id", $_SESSION["pseudo_id"]);
+         $query->execute();
+         $row = $query->rowCount();
+         if ($row == 1) {
+            return "fas fa-heart";
+         } else {
+            return "far fa-heart";
+         }
+      }
+
       $co = connexionBdd();
 
       $query = $co->prepare("SELECT * FROM utilisateurs WHERE id=:id");
@@ -115,9 +130,14 @@
                $query->bindParam(":question_id", $result[0]);
                $query->execute();
                $responseNumber = $query->fetch();
+               $query = $co->prepare("SELECT * from likes WHERE question_id=:question_id");
+               $query->bindParam(":question_id", $result[0]);
+               $query->execute();
+               $likesNumber = $query->rowCount();
+               $likeIcon = changeLikeIcon($result[0]);
                echo "<div class='toast show' role='alert' aria-live='assertive' aria-atomic='true'>",
                   "<div class='toast-header'>",
-                  "<strong class='mr-auto'><a href=''>" . getAuteur($result[3]) . "</a> | $responseNumber[0] réponses | " . getCateg($result[2]) . " | <i class='far fa-heart'></i></strong>
+                  "<strong class='mr-auto'><a href=''>" . getAuteur($result[3]) . "</a> | $responseNumber[0] réponses | " . getCateg($result[2]) . " | <a href='like.php?question_id=$result[0]'><i class='$likeIcon'></i></a> $likesNumber</strong>
                   <small>$result[4]</small>",
                   "</div>",
                   "<div class='toast-body'>",
