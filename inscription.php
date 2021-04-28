@@ -79,19 +79,19 @@
                               $query->bindParam(":date", $date);
                               $query->execute();
                               if ($query) {
-                                 $message = "successfully registered";
+                                 $message = "Votre compte a bien été enregistré";
                               }
                         } else {
-                              $message = "this email is already used";
+                              $message = "L'adresse mail est déja utilisée";
                         }
                      } else {
-                        $message = "this pseudo is already used";
+                        $message = "Le nom d'utilisateur est déja utilisé";
                      }
                   } else {
-                     $message = "password less than 8 or do not have any special characters";
+                     $message = "Le mot de passe doit comporter 8 caractères dont 1 caractère spéciale";
                   }
             } else {
-                  $message = "password dont match";
+                  $message = "Les mots de passe ne correspondent pas";
             }
          }
       }
