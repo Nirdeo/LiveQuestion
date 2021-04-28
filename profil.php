@@ -95,6 +95,11 @@
             }
 
             if (isset($_POST["submitDelete"])) {
+
+               $query = $co->prepare("DELETE FROM likes WHERE utilisateur_id=:pseudo_id");
+               $query->bindParam(":pseudo_id", $id);
+               $query->execute();
+
                $query = $co->prepare("DELETE FROM repondre WHERE utilisateurs_id=:pseudo_id");
                $query->bindParam(":pseudo_id", $id);
                $query->execute();
