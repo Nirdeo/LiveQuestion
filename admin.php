@@ -46,6 +46,15 @@
             return $result["pseudo"];
          }
 
+         function getAvatar($id) {
+            $co = connexionBdd();
+            $query = $co->prepare("SELECT avatar FROM utilisateurs WHERE id=:id");
+            $query->bindParam(":id", $id);
+            $query->execute();
+            $result = $query->fetch();
+            return $result["avatar"];
+         }
+
 
          function changeLikeIcon($like_question_id) {
             $co = connexionBdd();
@@ -77,7 +86,7 @@
             $likeIcon = changeLikeIcon($result[0]);
             echo "<div class='toast show' role='alert' aria-live='assertive' aria-atomic='true'>",
                  "<div class='toast-header'>",
-                 "<strong class='mr-auto'><a href='profil.php?pseudo_id=$result[3]'>" . getAuteur($result[3]) . "</a> | $responseNumber[0] réponses | " . getCateg($result[2]) . " | <a href='like.php?question_id=$result[0]'><i class='$likeIcon'></i></a> $likesNumber</strong>
+                 "<strong class='mr-auto'><img class='avatar' src='" . getAvatar($result[3]) . "'> <a href='profil.php?pseudo_id=$result[3]'>" . getAuteur($result[3]) . "</a> | $responseNumber[0] réponses | " . getCateg($result[2]) . " | <a href='like.php?question_id=$result[0]'><i class='$likeIcon'></i></a> $likesNumber</strong>
                  <small>$result[4]</small>",
                  "<a href='delete.php?question_id=$result[0]'><button type='button'>Supprimer</button></a>",
                  "</div>",

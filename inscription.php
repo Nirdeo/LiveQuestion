@@ -72,7 +72,7 @@
                      if (userExist($pseudo) == false) {
                         if (emailExist($email) == false) {
                               $co = connexionBdd();
-                              $query = $co->prepare("INSERT into utilisateurs (pseudo, email, mot_de_passe, avatar, genre, date_inscription, role) VALUES (:pseudo, :email, :password, '', :genre, :date, 'membre')");
+                              $query = $co->prepare("INSERT into utilisateurs (pseudo, email, mot_de_passe, avatar, genre, date_inscription, role) VALUES (:pseudo, :email, :password, 'https://www.tenforums.com/geek/gars/images/2/types/thumb_15951118880user.png', :genre, :date, 'membre')");
                               $query->bindParam(":pseudo", $pseudo);
                               $query->bindParam(":email", $email);
                               $query->bindParam(":password", $passwordhash);

@@ -56,6 +56,15 @@
          return $result["pseudo"];
       }
 
+      function getAvatar($id) {
+         $co = connexionBdd();
+         $query = $co->prepare("SELECT avatar FROM utilisateurs WHERE id=:id");
+         $query->bindParam(":id", $id);
+         $query->execute();
+         $result = $query->fetch();
+         return $result["avatar"];
+      }
+
 
       function changeLikeIcon($like_question_id) {
          $co = connexionBdd();
@@ -80,18 +89,22 @@
       ?>
       <section>
          <div class="container">
-            <h3>Profil de <?php echo $result['pseudo']; ?></h3>
+            <h3>Profil de <?php echo $result['pseudo']; ?>:</h3>
             <p>Genre: <?php if ($result['genre'] == "H") { echo "Homme"; } else { echo "Femme"; }; ?></p>
             <p>Date d'inscription: <?php echo $result['date_inscription']; ?></p>
+            <p>Avatar: </p><img class="avatar2" src="<?php echo getAvatar($id); ?>">
             <br>
             <?php
 
             if ($modifiable) {
                ?>
-               <h2>Supprimer mon compte:</h2>
-               <form action="" method="POST">
-                  <input type="submit" name="submitDelete" value="Supprimer">
-               </form>
+               <h3>Modifier mon compte:</h3>
+               <div class="modifyDiv">
+                  <button type="button" class="modifyButton" onclick="location.href='modifier.php'";>Modifier mes informations <i class="fas fa-user-cog"></i></button>
+                  <form action="" method="POST">
+                     <button type="submit" name="submitDelete" class="modifyButton">Supprimer mon compte <i class="fas fa-user-times"></i></button>
+                  </form>
+               </div>
                <?php
             }
 
@@ -114,7 +127,6 @@
                $query->execute();
                if ($query) {
                    $_SESSION = array();
-                   sleep(2);
                    header("Location: index.php");
                }
             }
@@ -143,7 +155,7 @@
                $likeIcon = changeLikeIcon($result[0]);
                echo "<div class='toast show' role='alert' aria-live='assertive' aria-atomic='true'>",
                   "<div class='toast-header'>",
-                  "<strong class='mr-auto'><a href=''>" . getAuteur($result[3]) . "</a> | $responseNumber[0] réponses | " . getCateg($result[2]) . " | <a href='like.php?question_id=$result[0]'><i class='$likeIcon'></i></a> $likesNumber</strong>
+                  "<strong class='mr-auto'><img class='avatar' src='" . getAvatar($result[3]) . "'> <a href='profil.php?pseudo_id=$result[3]'>" . getAuteur($result[3]) . "</a> | $responseNumber[0] réponses | " . getCateg($result[2]) . " | <a href='like.php?question_id=$result[0]'><i class='$likeIcon'></i></a> $likesNumber</strong>
                   <small>$result[4]</small>",
                   "</div>",
                   "<div class='toast-body'>",

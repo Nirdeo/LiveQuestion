@@ -33,6 +33,8 @@
                $_SESSION["pseudo"] = $pseudo;
                $_SESSION["pseudo_id"] = $result[0]["id"];
                $_SESSION["pseudo_role"] = $result[0]["role"];
+               $_SESSION["pseudo_email"] = $result[0]["email"];
+               $_SESSION["pseudo_avatar"] = $result[0]["avatar"];
                header("Location: accueil.php");
          } else {
                $message = "Le nom d'utilisateur ou mot de passe est incorrect";
