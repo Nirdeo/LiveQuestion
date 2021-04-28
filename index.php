@@ -145,10 +145,10 @@
                Atica</button>
                <button type="button" class="btn btn-light btn-lg"><img class="imgMarques" src="img/marque3.jpg">
                Triva</button>
-               <button type="button" class="btn btn-light btn-lg"><img class="imgMarques" src="img/marque4.jpg">
-               Kanba</button>
             </div>
             <div class="iconApp">
+               <button type="button" class="btn btn-light btn-lg"><img class="imgMarques" src="img/marque4.jpg">
+               Kanba</button>
                <button type="button" class="btn btn-light btn-lg"><img class="imgMarques" src="img/marque5.jpg"> Tvit
                Forms</button>
                <button type="button" class="btn btn-light btn-lg"><img class="imgMarques" src="img/marque6.jpg">
