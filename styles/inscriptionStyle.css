@@ -16,7 +16,7 @@ body {
 }
 .loginBox {
   width: 500px;
-  height: 700px;
+  height: auto;
   background: #fff;
   color: #f90f7a;
   top: 50%;
@@ -103,3 +103,4 @@ label {
 .loginBox a:hover {
   color: #fb2525;
 }
+

@@ -58,6 +58,7 @@
                   maintenant !</span></a>
                </p>
             </form>
+            <button type="button" class="btn btn-secondary" href="LiveQuestion/" >Retourner à l'accueil</button>
          </div>
       </div>
    </body>

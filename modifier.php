@@ -170,37 +170,41 @@
 
     ?>
     
+    <div class="container">
+        <div class="boxModif">
+            <h1><span>Modifier mon profile :</span></h1>
+            <h3>Modifier Pseudo:</h3>
+            <form action="" method="POST">
+                <input type="text" name="pseudo" value="<?php echo $_SESSION['pseudo'] ?>">
+                <input type="submit" name="submitPseudo" value="Modifier">
+                <p><?php echo $messageP; ?></p>
+            </form>
 
-    <h3>Modifier Pseudo:</h3>
-    <form action="" method="POST">
-        <input type="text" name="pseudo" value="<?php echo $_SESSION['pseudo'] ?>">
-        <input type="submit" name="submitPseudo" value="Modifier">
-        <p><?php echo $messageP; ?></p>
-    </form>
+            <h3>Modifier Email:</h3>
+            <form action="" method="POST">
+                <input type="email" name="email" value="<?php echo $_SESSION['pseudo_email'] ?>">
+                <input type="submit" name="submitEmail" value="Modifier">
+                <p><?php echo $messageE; ?></p>
+            </form>
 
-    <h3>Modifier Email:</h3>
-    <form action="" method="POST">
-        <input type="email" name="email" value="<?php echo $_SESSION['pseudo_email'] ?>">
-        <input type="submit" name="submitEmail" value="Modifier">
-        <p><?php echo $messageE; ?></p>
-    </form>
+            <h3>Modifier Avatar (lien web uniquement):</h3>
+            <form action="" method="POST">
+                <input type="url" name="avatar" value="<?php echo $_SESSION['pseudo_avatar'] ?>">
+                <input type="submit" name="submitAvatar" value="Modifier">
+                <p><?php echo $messageA; ?></p>
+            </form>
 
-    <h3>Modifier Mot De passe:</h3>
-    <form action="" method="POST">
-        <label for="passOld">Votre ancien mot de passe</label>
-        <input type="password" name="passOld">
-        <label for="passNew">Votre nouveau mot de passe</label>
-        <input type="password" name="passNew">
-        <input type="submit" name="submitPass" value="Modifier">
-        <p><?php echo $messagePA; ?></p>
-    </form>
-
-    <h3>Modifier Avatar (lien web uniquement):</h3>
-    <form action="" method="POST">
-        <input type="url" name="avatar" value="<?php echo $_SESSION['pseudo_avatar'] ?>">
-        <input type="submit" name="submitAvatar" value="Modifier">
-        <p><?php echo $messageA; ?></p>
-    </form>
+            <h3>Modifier Mot De passe:</h3>
+            <form action="" method="POST">
+                <label for="passOld">Votre ancien mot de passe</label>
+                <input type="password" name="passOld">
+                <label for="passNew">Votre nouveau mot de passe</label>
+                <input type="password" name="passNew">
+                <input type="submit" name="submitPass" value="Modifier">
+                <p><?php echo $messagePA; ?></p>
+            </form>
+        </div>
+    </div>
 
 
    </body>
