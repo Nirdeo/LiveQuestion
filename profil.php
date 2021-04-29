@@ -102,7 +102,7 @@
                <div class="modifyDiv">
                   <button type="button" class="modifyButton" onclick="location.href='modifier.php'";>Modifier mes informations <i class="fas fa-user-cog"></i></button>
                   <form action="" method="POST">
-                     <button type="submit" name="submitDelete" class="modifyButton">Supprimer mon compte <i class="fas fa-user-times"></i></button>
+                     <button type="submit" name="submitDelete" class="modifyButton">Se désinscrire <i class="fas fa-user-times"></i></button>
                   </form>
                </div>
                <?php
