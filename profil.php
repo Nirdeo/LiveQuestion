@@ -11,6 +11,7 @@
       <script type="text/javascript" src="script.js"></script>
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
       <link rel="icon" href="img/favicon.png" type="image/png">
+      <script src="script/profilScript.js"></script>
    </head>
    <body>
       <!-- NAVBAR -->
@@ -101,8 +102,9 @@
                <h3>Modifier mon compte:</h3>
                <div class="modifyDiv">
                   <button type="button" class="modifyButton" onclick="location.href='modifier.php'";>Modifier mes informations <i class="fas fa-user-cog"></i></button>
-                  <form action="" method="POST">
-                     <button type="submit" name="submitDelete" class="modifyButton">Se désinscrire <i class="fas fa-user-times"></i></button>
+                  <button type="button" class="modifyButton" onclick="submitDelete()">Se désinscrire <i class="fas fa-user-times"></i></button>
+                  <form action="" method="POST" name="deleteForm">
+                     <input type="text" name="submitDelete" value="true" style="display: none;">
                   </form>
                </div>
                <?php
