@@ -45,6 +45,9 @@
 
       ?>
       <div class="wrapper">
+         <div class="boutonPagePrincipale">
+            <button type="button" class="btn btn-light" href="index.php">Page d'accueil</button>
+         </div>
          <div class="loginBox">
             <h1>Se connecter</h1>
             <h3><?php echo $message; ?></h3>
