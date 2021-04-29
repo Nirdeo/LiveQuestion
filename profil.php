@@ -12,6 +12,7 @@
    <script type="text/javascript" src="script.js"></script>
    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
    <link rel="icon" href="img/favicon.png" type="image/png">
+   <script src="script/profilScript.js"></script>
 </head>
 
 <body>
