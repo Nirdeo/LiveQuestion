@@ -7,7 +7,7 @@
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
-      <link rel="stylesheet" type="text/css" href="styles/admin.css">
+      <link rel="stylesheet" type="text/css" href="styles/modifier.css">
       <script src="script.js"></script>
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
       <link rel="icon" href="img/favicon.png" type="image/png">
@@ -103,27 +103,31 @@
 
     ?>
     
+    <div class="container">
+        <div class="boxModif">
+            <h1><span>Modifier le profile :</span></h1>
+            <h3>Modifier Pseudo:</h3>
+            <form action="" method="POST">
+                <input type="text" name="pseudo" value="<?php echo $_SESSION['pseudo'] ?>">
+                <input type="submit" name="submitPseudo" value="Modifier">
+                <p><?php echo $messageP; ?></p>
+            </form>
 
-    <h3>Modifier Pseudo:</h3>
-    <form action="" method="POST">
-        <input type="text" name="pseudo" value="<?php echo $_SESSION['pseudo'] ?>">
-        <input type="submit" name="submitPseudo" value="Modifier">
-        <p><?php echo $messageP; ?></p>
-    </form>
+            <h3>Modifier Email:</h3>
+            <form action="" method="POST">
+                <input type="email" name="email" value="<?php echo $_SESSION['pseudo_email'] ?>">
+                <input type="submit" name="submitEmail" value="Modifier">
+                <p><?php echo $messageE; ?></p>
+            </form>
 
-    <h3>Modifier Email:</h3>
-    <form action="" method="POST">
-        <input type="email" name="email" value="<?php echo $_SESSION['pseudo_email'] ?>">
-        <input type="submit" name="submitEmail" value="Modifier">
-        <p><?php echo $messageE; ?></p>
-    </form>
-
-    <h3>Modifier Avatar (lien web uniquement):</h3>
-    <form action="" method="POST">
-        <input type="text" name="avatar" value="<?php echo $_SESSION['pseudo_avatar'] ?>">
-        <input type="submit" name="submitAvatar" value="Modifier">
-        <p><?php echo $messageA; ?></p>
-    </form>
+            <h3>Modifier Avatar (lien web uniquement):</h3>
+            <form action="" method="POST">
+                <input type="text" name="avatar" value="<?php echo $_SESSION['pseudo_avatar'] ?>">
+                <input type="submit" name="submitAvatar" value="Modifier">
+                <p><?php echo $messageA; ?></p>
+            </form>
+        </div>
+    </div>
 
 
    </body>
