@@ -46,10 +46,10 @@
          }
          ?>
       <?php include("lqnavbar.php"); ?>
-      <h3>Ajouter une nouvelle question:</h3>
+      <h3>Ajouter une nouvelle question :</h3>
       <form action="" method="POST">
          <div class="form-outline mb-4">
-            <label class="col-form-label" for="title">Intitulé de la question</label>
+            <label class="col-form-label" for="title">Contenu de la question</label>
             <input type="text" name="title" id="title" class="form-control">
          </div>
          <div class="form-outline mb-4">
