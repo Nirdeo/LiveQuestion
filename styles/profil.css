@@ -7,7 +7,9 @@ p {
 body {
   background-color: #eee;
 }
-h1 {
+
+h1,
+h3 {
   text-align: center;
 }
 
@@ -30,8 +32,6 @@ h1 {
   max-width: 100% !important;
 }
 
-
-
 .modifyDiv {
   display: flex;
 }
@@ -48,4 +48,14 @@ h1 {
 .avatar2 {
   height: 50px;
   width: 50px;
+}
+
+.btn-primary {
+  background-color: #f90f7a !important;
+  color: #fff !important;
+}
+
+.btn-outline-primary {
+  background-color: #737176 !important;
+  color: #fff !important;
 }

@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>LiveQuestion</title>
-      <link rel="stylesheet" type="text/css" href="styles/profil.css">
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-      <script type="text/javascript" src="script.js"></script>
-      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
-      <link rel="icon" href="img/favicon.png" type="image/png">
-   </head>
-   <body>
-      <!-- NAVBAR -->
-      <?php
+
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>LiveQuestion</title>
+   <link rel="stylesheet" type="text/css" href="styles/profil.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+   <script type="text/javascript" src="script.js"></script>
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
+   <link rel="icon" href="img/favicon.png" type="image/png">
+</head>
+
+<body>
+   <!-- NAVBAR -->
+   <?php
       session_start();
       if (!isset($_SESSION["pseudo"])) {
          header("Location: connection.php");
@@ -87,25 +89,47 @@
       $query->execute();
       $result = $query->fetch();
       ?>
-      <section>
-         <div class="container">
-            <h3>Profil de <?php echo $result['pseudo']; ?>:</h3>
-            <p>Genre: <?php if ($result['genre'] == "H") { echo "Homme"; } else { echo "Femme"; }; ?></p>
-            <p>Date d'inscription: <?php echo $result['date_inscription']; ?></p>
-            <p>Avatar: </p><img class="avatar2" src="<?php echo getAvatar($id); ?>">
-            <br>
-            <?php
+   <section>
+      <div class="container">
+         <div class="main-body">
+            <div class="row gutters-sm">
+               <div class="col-md-12 mb-3">
+                  <div class="card">
+                     <div class="card-body">
+                        <div class="d-flex flex-column align-items-center text-center">
+                           <img class=" rounded-circle avatar2" src="<?php echo getAvatar($id); ?>" width="150">
+                           <div class="mt-3">
+                              <h4>Profil de <br>
+                                 <?php echo $result['pseudo']; ?>
+                              </h4>
+                              <p class="text-secondary mb-1">Genre:
+                                 <?php if ($result['genre'] == "H") { echo "Homme ♂️"; } else { echo "Femme ♀"; }; ?>
+                              </p>
+                              <p class="text-muted font-size-sm">Date d'inscription:
+                                 <?php echo $result['date_inscription']; ?>
+                              </p>
 
+            <?php
             if ($modifiable) {
                ?>
-               <h3>Modifier mon compte:</h3>
-               <div class="modifyDiv">
-                  <button type="button" class="modifyButton" onclick="location.href='modifier.php'";>Modifier mes informations <i class="fas fa-user-cog"></i></button>
-                  <form action="" method="POST">
-                     <button type="submit" name="submitDelete" class="modifyButton">Se désinscrire <i class="fas fa-user-times"></i></button>
-                  </form>
+                              <div class="modifyDiv">
+                                 <button type="button" class="btn btn-primary modifyButton"
+                                    onclick="location.href='modifier.php';">Modifier mes informations <i
+                                       class="fas fa-user-cog"></i></button>
+                                 <form action="" method="POST">
+                                    <button type="submit" name="submitDelete"
+                                       class="btn btn-outline-primary modifyButton">Me désinscrire <i
+                                          class="fas fa-user-times"></i></button>
+                                 </form>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
                </div>
-               <?php
+            </div>
+         </div>
+         <?php
             }
 
             if (isset($_POST["submitDelete"])) {
@@ -117,11 +141,11 @@
                $query = $co->prepare("DELETE FROM repondre WHERE utilisateurs_id=:pseudo_id");
                $query->bindParam(":pseudo_id", $id);
                $query->execute();
-       
+
                $query = $co->prepare("DELETE FROM questions WHERE auteur_id=:pseudo_id");
                $query->bindParam(":pseudo_id", $id);
                $query->execute();
-               
+
                $query = $co->prepare("DELETE FROM utilisateurs WHERE id=:pseudo_id");
                $query->bindParam(":pseudo_id", $id);
                $query->execute();
@@ -130,13 +154,13 @@
                    header("Location: index.php");
                }
             }
-            
+
 
             ?>
-            <br>
-            <h3>Questions Posées:</h3>
-            <br>
-            <?php
+         <br>
+         <h3>Mes questions posées:</h3>
+         <br>
+         <?php
 
             $co = connexionBdd();
             $query = $co->prepare("SELECT * FROM questions WHERE auteur_id=:id");
@@ -165,7 +189,8 @@
             }
 
             ?>
-         </div>
-      </section>
-   </body>
+      </div>
+   </section>
+</body>
+
 </html>
