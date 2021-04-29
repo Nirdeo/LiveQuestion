@@ -117,9 +117,9 @@
                                  <button type="button" class="btn btn-primary modifyButton"
                                     onclick="location.href='modifier.php';">Modifier mes informations <i
                                        class="fas fa-user-cog"></i></button>
-                                 <button type="button" class="btn btn-outline-primary modifyButton">Me désinscrire <i class="fas fa-user-times"></i></button>
+                                 <button type="button" class="btn btn-outline-primary modifyButton" onclick="submitDelete()">Me désinscrire <i class="fas fa-user-times"></i></button>
                                  <form action="" method="POST" name="deleteForm">
-                                    <input type="text" name="submitDelete" onclick="submitDelete()" style="display: none;">
+                                    <input type="text" name="submitDelete" style="display: none;">
                                  </form>
                               </div>
                            </div>
