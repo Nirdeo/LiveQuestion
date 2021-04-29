@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Client :  localhost
--- Généré le :  Mer 28 Avril 2021 à 14:54
+-- Généré le :  Jeu 29 Avril 2021 à 15:47
 -- Version du serveur :  5.7.11
 -- Version de PHP :  5.6.18
 
@@ -70,7 +70,7 @@ CREATE TABLE `questions` (
 --
 
 INSERT INTO `questions` (`id`, `titre`, `categorie_id`, `auteur_id`, `date_creation`) VALUES
-(8, 'test', 1, 1, '2021-04-28 16:17:55');
+(9, 'Quest', 1, 1, '2021-04-28 17:12:42');
 
 -- --------------------------------------------------------
 
@@ -85,6 +85,13 @@ CREATE TABLE `repondre` (
   `reponse` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Contenu de la table `repondre`
+--
+
+INSERT INTO `repondre` (`utilisateurs_id`, `questions_id`, `date`, `reponse`) VALUES
+(1, 9, '2021-04-28 20:40:36', 'test2');
+
 -- --------------------------------------------------------
 
 --
@@ -96,7 +103,7 @@ CREATE TABLE `utilisateurs` (
   `pseudo` varchar(255) NOT NULL,
   `email` varchar(255) NOT NULL,
   `mot_de_passe` varchar(255) NOT NULL,
-  `avatar` varchar(255) NOT NULL,
+  `avatar` varchar(500) NOT NULL,
   `genre` char(1) NOT NULL,
   `date_inscription` datetime NOT NULL,
   `role` varchar(255) NOT NULL
@@ -107,8 +114,8 @@ CREATE TABLE `utilisateurs` (
 --
 
 INSERT INTO `utilisateurs` (`id`, `pseudo`, `email`, `mot_de_passe`, `avatar`, `genre`, `date_inscription`, `role`) VALUES
-(1, 'Tristan', 'tristan@gmail.com', '29c111bb6f020dd69cfc15790dd110826135ec7cc773c18b3450537590124846', '', 'H', '2021-04-27 00:00:00', 'admin'),
-(4, 'test', 'test@gmail.com', '29c111bb6f020dd69cfc15790dd110826135ec7cc773c18b3450537590124846', '', 'H', '2021-04-28 16:40:55', 'membre');
+(1, 'Tristan', 'tristan@gmail.com', '29c111bb6f020dd69cfc15790dd110826135ec7cc773c18b3450537590124846', 'https://pbs.twimg.com/profile_images/787967436263944192/EjdVElEr.jpg', 'H', '2021-04-27 00:00:00', 'admin'),
+(8, 'test', 'test@gmail.com', '29c111bb6f020dd69cfc15790dd110826135ec7cc773c18b3450537590124846', 'https://www.tenforums.com/geek/gars/images/2/types/thumb_15951118880user.png', 'H', '2021-04-29 17:07:49', 'membre');
 
 --
 -- Index pour les tables exportées
@@ -162,17 +169,17 @@ ALTER TABLE `categories`
 -- AUTO_INCREMENT pour la table `likes`
 --
 ALTER TABLE `likes`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=37;
 --
 -- AUTO_INCREMENT pour la table `questions`
 --
 ALTER TABLE `questions`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 --
 -- AUTO_INCREMENT pour la table `utilisateurs`
 --
 ALTER TABLE `utilisateurs`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 --
 -- Contraintes pour les tables exportées
 --
