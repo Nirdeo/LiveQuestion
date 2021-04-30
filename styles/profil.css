@@ -60,6 +60,10 @@ h3 {
   color: #fff !important;
 }
 
-.toast-header{
+.toast-header {
   width: 400px;
+}
+
+.main-body {
+  margin-top: 5% !important;
 }
