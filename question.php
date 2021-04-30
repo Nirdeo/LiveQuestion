@@ -106,7 +106,7 @@
                   $query->bindParam(":id", $_GET["question_id"]);
                   $query->execute();
                   $results = $query->fetchAll();
-                  foreach ($results as $result) {
+                  foreach (array_reverse($results) as $result) {
                       echo "<div class='toast show' role='alert' aria-live='assertive' aria-atomic='true'>",
                            "<div class='toast-header'>",
                            "<strong class='mr-auto'><img class='avatar' src='" . getAvatar($result[0]) . "'> <a href='profil.php?pseudo_id=$result[0]'>" . getAuteur($result[0]) . "</a></strong>",
