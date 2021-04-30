@@ -59,3 +59,7 @@ h3 {
   background-color: #737176 !important;
   color: #fff !important;
 }
+
+.toast-header{
+  width: 400px;
+}
