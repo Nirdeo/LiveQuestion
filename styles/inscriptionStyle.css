@@ -104,3 +104,8 @@ label {
   color: #fb2525;
 }
 
+button[type=button]{
+  margin-top: 20px;
+  margin-left: 25%;
+}
+
