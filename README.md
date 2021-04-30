@@ -1,7 +1,7 @@
 ﻿# LiveQuestion
 Projet de création d'un réseau social de questions-réponses.
 
-# Membres du Projets:
+## Membres du Projets:
 Tristan Niel  
 Victor De Domenico  
 Arthur Serenne  
