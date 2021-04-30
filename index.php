@@ -18,6 +18,9 @@
             require("navbar.php");
             ?>
          <div class="container headerBlock">
+            <div class="figureAccueil">
+               <div class="figureAccueil2"></div>
+            </div>
             <div class="row">
                <div class="col-md-6">
                   <h1>Lorem ipsum <br> dolor sit <br> amet.</h1>

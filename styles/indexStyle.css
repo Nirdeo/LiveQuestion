@@ -60,6 +60,34 @@ header img {
   }
 }
 
+.figureAccueil{
+  width: 800px;
+  height: 570px;
+  background-color: #EC008C;
+  border-radius: 36px;
+  border-top-left-radius: 880px 876px;
+  border-top-right-radius: 566px 587px;
+  border-bottom-left-radius: 7px 74px;
+  border-bottom-right-radius: 900px 140px;
+  margin-left: 718px;
+  position: absolute;
+  top: 173px;
+}
+
+.figureAccueil2{
+  width: 550px;
+  height: 400px;
+  background-color: #F738B4;
+  border-radius: 36px;
+  border-top-left-radius: 880px 876px;
+  border-top-right-radius: 566px 587px;
+  border-bottom-left-radius: 7px 74px;
+  border-bottom-right-radius: 900px 140px;
+  margin-left: 120px;
+  position: absolute;
+  top: 120px;
+}
+
 /*SECTION 1*/
 
 #section1 {
@@ -373,3 +401,4 @@ header img {
 .section5TextColor6 {
   font-weight: bold;
 }
+
