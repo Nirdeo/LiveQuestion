@@ -6,7 +6,7 @@
    <div class="container">
       <div class="row">
          <div class="col-md-8">
-            <p>© 2019 Page protected by reCAPTCHA and subject to Google's <b>Privace Policy</b> and <b>Terms of
+            <p>© 2019 Page protected by reCAPTCHA and subject to Google's <b>Privacy Policy</b> and <b>Terms of
                Service</b>
             </p>
          </div>

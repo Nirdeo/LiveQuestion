@@ -16,10 +16,10 @@
          </li>
          <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
-               aria-expanses="false">Mon profil</a>
+               aria-expanses="false">Mon compte</a>
             <div class="dropdown-menu">
                <a class="dropdown-item" href="profil.php">Accéder à mon profil</a>
-               <a class="dropdown-item" href="logout.php">Déconnexion</a>
+               <a class="dropdown-item" href="logout.php">Me déconnecter</a>
                <?php
                if ($_SESSION["pseudo_role"] == "admin") {
                   echo "<a class='dropdown-item' href='admin.php'>Page Admin</a>";

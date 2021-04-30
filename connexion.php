@@ -37,7 +37,7 @@
                $_SESSION["pseudo_avatar"] = $result[0]["avatar"];
                header("Location: accueil.php");
          } else {
-               $message = "Le nom d'utilisateur ou mot de passe est incorrect";
+               $message = "Le nom d'utilisateur ou le mot de passe est incorrect";
          }
       }
 
@@ -49,10 +49,10 @@
             <h1>Se connecter</h1>
             <h3><?php echo $message; ?></h3>
             <form action="" method="post">
-               <p>Nom d'Utilisateur</p>
-               <input type="text" name="pseudo" placeholder="Enter votre nom d'utilisateur">
+               <p>Nom d'utilisateur</p>
+               <input type="text" name="pseudo" placeholder="Entrez votre nom d'utilisateur">
                <p>mot de passe</p>
-               <input type="password" name="password" placeholder="Enter votre mot de passe">
+               <input type="password" name="password" placeholder="Entrez votre mot de passe">
                <input type="submit" name="submit" value="valider">
                <p><span class="lienExterne">Vous n'avez pas de compte ? <a href="inscription.php"> S'inscrire
                   maintenant !</span></a>

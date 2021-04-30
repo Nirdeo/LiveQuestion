@@ -169,7 +169,7 @@
             </div>
             <div class="questionFaq">
                <div class="question1">
-                  <p><span class="section5TextColor1 changeColor">Can i upgrade later on?</span><span
+                  <p><span class="section5TextColor1 changeColor">Can I upgrade later on?</span><span
                      class="iconeFleche"><i class="fas fa-caret-right iconeFlecheJS1"></i></span></p>
                   <p class="text1">Integer ut Oberyn massa. Sed feugiat vitae turpis a porta. Aliquam <br> sagittis
                      interdum Melisandre. Vivamus ornare pharetra diam sit <br> amet tincidunt. Eunuch sit amet
@@ -181,7 +181,7 @@
                   </p>
                </div>
                <div class="question2">
-                  <p><span class="section5TextColor2 changeColor">Can i port my data from another
+                  <p><span class="section5TextColor2 changeColor">Can I port my data from another
                      provider?</span><span class="iconeFleche"><i
                         class="fas fa-caret-right iconeFlecheJS2"></i></span>
                   </p>
@@ -233,7 +233,7 @@
                   </p>
                </div>
                <div class="question6">
-                  <p><span class="section5TextColor6 changeColor">Can my company request a custum plan?</span><span
+                  <p><span class="section5TextColor6 changeColor">Can my company request a custom plan?</span><span
                      class="iconeFleche"><i class="fas fa-caret-right iconeFlecheJS6"></i></span></p>
                   <p class="text6">Integer ut Oberyn massa. Sed feugiat vitae turpis a porta. Aliquam <br> sagittis
                      interdum Melisandre. Vivamus ornare pharetra diam sit <br> amet tincidunt. Eunuch sit amet

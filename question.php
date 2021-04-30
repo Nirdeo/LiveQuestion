@@ -100,7 +100,7 @@
          ?>
             <div class="row">
                <div class="col-md-6">
-                  <h3>Réponses:</h3>
+                  <h3>Réponses :</h3>
                   <?php
                   $query = $co->prepare("SELECT * FROM repondre WHERE questions_id=:id");
                   $query->bindParam(":id", $_GET["question_id"]);
@@ -124,7 +124,7 @@
                   $reponse = $_POST["reponse"];
                   date_default_timezone_set('UTC');
                   $date = date('Y-m-d H:i:s');
-          
+
                   $query = $co->prepare("INSERT INTO repondre (utilisateurs_id, questions_id, date, reponse) VALUES (:pseudo_id, :question_id, :date, :reponse)");
                   $query->bindParam(":reponse", $reponse);
                   $query->bindParam(":date", $date);
@@ -133,10 +133,10 @@
                   try {
                      $query->execute();
                      if ($query) {
-                        $message = "Your answer has been submitted";
+                        $message = "Votre réponse a été soumise";
                     }
                   } catch (Exception $e) {
-                     $message = "You already replied to this question";
+                     $message = "Vous avez déjà répondu a cette question";
                   }
                }
                ?>
@@ -148,7 +148,7 @@
                   <div class="row">
                      <div class="col-md-6">
                         <form action="" method="post">
-                           <label for="reponse">Votre réponse:</label><br>
+                           <label for="reponse">Votre réponse :</label><br>
                            <textarea id="reponse" name="reponse"></textarea>
                            <br>
                            <input type="submit" name="submit" class="rosebutton">

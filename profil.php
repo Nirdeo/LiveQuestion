@@ -103,10 +103,10 @@
                               <h4>Profil de <br>
                                  <?php echo $result['pseudo']; ?>
                               </h4>
-                              <p class="text-secondary mb-1">Genre:
+                              <p class="text-secondary mb-1">Genre :
                                  <?php if ($result['genre'] == "H") { echo "Homme ♂️"; } else { echo "Femme ♀"; }; ?>
                               </p>
-                              <p class="text-muted font-size-sm">Date d'inscription:
+                              <p class="text-muted font-size-sm">Date d'inscription :
                                  <?php echo $result['date_inscription']; ?>
                               </p>
 
@@ -158,7 +158,7 @@
 
             ?>
          <br>
-         <h3>Mes questions posées:</h3>
+         <h3>Mes questions posées :</h3>
          <br>
          <?php
 

@@ -40,7 +40,7 @@
                  $query->bindParam(":date", $date);
                  $query->execute();
                  if ($query) {
-                     $message = "Votre question a bien été envoyé !";
+                     $message = "Votre question a bien été envoyée !";
                  }
              }
          }

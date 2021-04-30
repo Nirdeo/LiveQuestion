@@ -41,7 +41,7 @@
             </div>
          </li>
          <li class="nav-item dropdown">
-            <a class="btn btn-secondary" type="submit" href="redirection.php">Se Connecter</a>
+            <a class="btn btn-secondary" type="submit" href="redirection.php">Se connecter</a>
          </li>
       </ul>
    </div>
