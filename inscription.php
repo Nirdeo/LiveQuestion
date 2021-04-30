@@ -83,16 +83,16 @@
                                  $message = "Votre compte a bien été enregistré";
                               }
                         } else {
-                              $message = "L'adresse mail est déja utilisée";
+                              $message = "L'adresse mail est déjà utilisée";
                         }
                      } else {
-                        $message = "Le nom d'utilisateur est déja utilisé";
+                        $message = "Le nom d'utilisateur est déjà utilisé";
                      }
                   } else {
-                     $message = "Le mot de passe doit comporter 8 caractères dont 1 caractère spéciale";
+                     $message = "Le mot de passe doit comporter 8 caractères dont 1 caractère spécial";
                   }
             } else {
-                  $message = "Les mots de passe ne correspondent pas";
+                  $message = "Les mots de passes ne correspondent pas";
             }
          }
       }
@@ -104,8 +104,8 @@
             <h1>S'inscrire</h1>
             <h3><?php echo $message; ?></h3>
             <form action="" method="post">
-               <input type="text" name="pseudo" placeholder="Enter votre nom d'utilisateur">
-               <input type="email" name="email" placeholder="Enter votre Adresse mail">
+               <input type="text" name="pseudo" placeholder="Entrez votre nom d'utilisateur">
+               <input type="email" name="email" placeholder="Entrez votre adresse mail">
                <p>Genre :</p>
                <div class="radioInput">
                   <label for="homme">Homme</label>
@@ -113,10 +113,10 @@
                   <label for="femme">Femme</label>
                   <input type="radio" name="genre" value="F">
                </div>
-               <input type="password" name="password" placeholder="Enter votre mot de passe">
-               <input type="password" name="passwordverif" placeholder="Confirmer votre mot de passe">
+               <input type="password" name="password" placeholder="Entrez votre mot de passe">
+               <input type="password" name="passwordverif" placeholder="Confirmez votre mot de passe">
                <input type="submit" name="submit" value="valider">
-               <p>Vous avez deja un compte ? <a href="connexion.php"> Se connecter !</a></p>
+               <p>Vous avez déjà un compte ? <a href="connexion.php"> Se connecter !</a></p>
             </form>
             <a href="index.php"><button type="button" class="btn btn-secondary">Retourner à l'accueil</button></a>
          </div>
