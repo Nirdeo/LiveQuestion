@@ -118,7 +118,7 @@
                <input type="submit" name="submit" value="valider">
                <p>Vous avez deja un compte ? <a href="connexion.php"> Se connecter !</a></p>
             </form>
-            <button type="button" class="btn btn-secondary" href="LiveQuestion/" >Retourner à l'accueil</button>
+            <a href="index.php"><button type="button" class="btn btn-secondary">Retourner à l'accueil</button></a>
          </div>
       </div>
 </html>
