@@ -25,6 +25,8 @@ form {
 
 .btn {
   background-color: #f90f7a !important;
+  width: 30% !important;
+  margin-left: 35% !important;
 }
 
 /* NAVBAR */
