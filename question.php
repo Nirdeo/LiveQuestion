@@ -73,6 +73,7 @@
          }
 
 
+         //Affichage de la question
          $co = connexionBdd();
 
          $query = $co->prepare("SELECT * FROM questions WHERE id=:id");
@@ -102,6 +103,7 @@
                <div class="col-md-6">
                   <h3>Réponses :</h3>
                   <?php
+                  //Affichage des réponses
                   $query = $co->prepare("SELECT * FROM repondre WHERE questions_id=:id");
                   $query->bindParam(":id", $_GET["question_id"]);
                   $query->execute();
@@ -120,6 +122,7 @@
                   ?>
                </div>
                <?php
+               //Enregistrement de la réponse
                if (isset($_POST["submit"])) {
                   $reponse = $_POST["reponse"];
                   date_default_timezone_set('UTC');

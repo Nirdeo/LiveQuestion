@@ -7,8 +7,8 @@ if (!isset($_SESSION["pseudo"]) || $_SESSION["pseudo_role"] != "admin") {
 
 require("DB/connexion.php");
 
+//Suppression des likes, reponses et de la question selectionner
 $co = connexionBdd();
-
 
 $query = $co->prepare("DELETE FROM likes WHERE question_id=:question_id");
 $query->bindParam(":question_id", $_GET["question_id"]);

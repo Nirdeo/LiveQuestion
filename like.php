@@ -11,6 +11,7 @@ if (!isset($_GET["question_id"], $_SESSION["pseudo_id"])) {
 
 require("DB/connexion.php");
 
+//Liker ou retirer le like
 $co = connexionBdd();
 
 $query = $co->prepare("SELECT * FROM likes WHERE utilisateur_id=:pseudo_id AND question_id=:question_id");

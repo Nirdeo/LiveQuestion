@@ -15,6 +15,7 @@
    <body>
       <?php
 
+      //Vérification si l'utilisateur est connecté
       session_start();
       if (!isset($_SESSION["pseudo"])) {
          header("Location: connexion.php");
@@ -24,6 +25,7 @@
       require("DB/connexion.php");
 
 
+      //Fonctions de récuperation des données de la bdd
       function getCateg($id) {
          $co = connexionBdd();
          $query = $co->prepare("SELECT nom FROM categories WHERE id=:id");
@@ -51,7 +53,7 @@
          return $result["avatar"];
       }
 
-
+      //Changement de l'icone de like
       function changeLikeIcon($like_question_id) {
          $co = connexionBdd();
          $query = $co->prepare("SELECT * FROM likes WHERE utilisateur_id=:pseudo_id AND question_id=:question_id");
@@ -76,6 +78,7 @@
          <h3>Voici la liste de toutes les questions <?php echo $_SESSION["pseudo"]; ?> !</h3>
             <?php
 
+            //affichage de toutes les questions
             $co = connexionBdd();
             $query = $co->query("SELECT * FROM questions");
             $results = $query->fetchAll();

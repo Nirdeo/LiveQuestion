@@ -15,6 +15,8 @@
    <body>
       <!-- NAVBAR -->
     <?php
+
+    //Vérification du role de l'utilisateur
     session_start();
     if (!isset($_SESSION["pseudo"]) || $_SESSION["pseudo_role"] != "admin") {
        header("Location: connexion.php");

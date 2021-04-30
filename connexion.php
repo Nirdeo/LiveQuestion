@@ -19,6 +19,7 @@
       $co = connexionBdd();
       $message = "";
 
+      //Connexion de l'utilisateur si le pseudo et le mot de passe est bon
       if (isset($_POST["submit"])) {
          $pseudo = $_POST["pseudo"];
          $password = hash('sha256', $_POST["password"]);

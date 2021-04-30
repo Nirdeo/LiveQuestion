@@ -16,7 +16,7 @@
       <!-- NAVBAR -->
     <?php
     session_start();
-    if (!isset($_SESSION["pseudo"]) || !isset($_SESSION["pseudo_id"])) {
+    if (!isset($_SESSION["pseudo"]) && !isset($_SESSION["pseudo_id"])) {
        header("Location: connexion.php");
        exit();
     }
@@ -71,6 +71,7 @@
         }
      }
 
+     //Verification que l'ancien mot de passe est le bon
      function oldPasswordVerification($pass) {
         $pass = hash('sha256', $pass);
         $co = connexionBdd();
@@ -86,7 +87,7 @@
         }
      }
 
-
+     //Modification du pseudo
     if (isset($_POST["submitPseudo"])) {
         if (!empty($_POST["pseudo"])) {
             if (pseudoUnique($_POST["pseudo"])) {
@@ -106,6 +107,7 @@
         }
     }
 
+    //Modification de l'email
     if (isset($_POST["submitEmail"])) {
         if (!empty($_POST["email"])) {
             if (emailUnique($_POST["email"])) {
@@ -125,6 +127,7 @@
         }
     }
 
+    //Modification du mot de passe
     if (isset($_POST["submitPass"])) {
         if (!empty($_POST["passOld"]) && !empty($_POST["passNew"])) {
             if ($_POST["passOld"] != $_POST["passNew"]) {
@@ -152,6 +155,7 @@
         }
     }
 
+    //Modification de l'avatar
     if (isset($_POST["submitAvatar"])) {
         if (!empty($_POST["avatar"])) {
             $query = $co->prepare("UPDATE utilisateurs SET avatar=:avatar WHERE id=:pseudo_id");

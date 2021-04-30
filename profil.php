@@ -31,6 +31,7 @@
       }
 
 
+      //Si l'utilisateur consulte son profil autorisé les modifications
       if ($id == $_SESSION["pseudo_id"]) {
          $modifiable = true;
       } else {
@@ -83,6 +84,7 @@
          }
       }
 
+      //Affichage des informations du profil
       $co = connexionBdd();
 
       $query = $co->prepare("SELECT * FROM utilisateurs WHERE id=:id");
@@ -111,6 +113,7 @@
                               </p>
 
             <?php
+            //Affichage des boutons de modifications
             if ($modifiable) {
                ?>
                               <div class="modifyDiv">
@@ -132,6 +135,7 @@
          <?php
             }
 
+            //Désinscription de l'utilisateur
             if (isset($_POST["submitDelete"])) {
 
                $query = $co->prepare("DELETE FROM likes WHERE utilisateur_id=:pseudo_id");
@@ -162,6 +166,7 @@
          <br>
          <?php
 
+            //Affichage des questions posés par l'utilisateur consulté
             $co = connexionBdd();
             $query = $co->prepare("SELECT * FROM questions WHERE auteur_id=:id");
             $query->bindParam(":id", $id);

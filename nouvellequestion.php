@@ -23,6 +23,7 @@
          require("DB/connexion.php");
          $message = "";
 
+         //Ajout de la question
          $co = connexionBdd();
 
          if (isset($_POST["submit"])) {
@@ -56,6 +57,7 @@
             <label class="form-label" for="categorie">Catégorie de la question</label>
             <select class="custom-select" name="categorie" id="categorie">
             <?php
+               //Récuperation des categories
                $query = $co->prepare("SELECT * FROM categories");
                $query->execute();
                $results = $query->fetchAll();

@@ -17,10 +17,12 @@
 
       require("DB/connexion.php");
 
+      //Regular Expression pour les caractères spéciaux
       function has_special_chars($string) {
          return preg_match('/[^a-zA-Z\d]/', $string);
       }
 
+      //Fonction de vérification du mot de passe
       function passwordVerification($pass) {
          if (strlen($pass) >= 8 && has_special_chars($pass) > 0) {
             return true;
@@ -29,6 +31,7 @@
          }
       }
 
+      //Fonctions de vérification si le pseudo et l'email sont uniques
       function userExist($user) {
          $co = connexionBdd();
          $query = $co->prepare("SELECT * FROM utilisateurs WHERE pseudo=:pseudo");
@@ -57,6 +60,7 @@
 
       $message = "";
 
+      //Inscription
       if (isset($_POST["submit"])) {
          if (isset($_POST["pseudo"], $_POST["email"], $_POST["password"], $_POST["passwordverif"], $_POST["genre"])) {
             $pseudo = $_POST["pseudo"];
