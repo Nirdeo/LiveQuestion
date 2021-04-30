@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Client :  localhost
--- Généré le :  Jeu 29 Avril 2021 à 15:47
+-- Généré le :  Ven 30 Avril 2021 à 16:06
 -- Version du serveur :  5.7.11
 -- Version de PHP :  5.6.18
 
@@ -36,8 +36,13 @@ CREATE TABLE `categories` (
 --
 
 INSERT INTO `categories` (`id`, `nom`) VALUES
-(1, 'A'),
-(2, 'B');
+(3, 'Sport'),
+(4, 'Cinema'),
+(5, 'Culture'),
+(6, 'Theatre'),
+(7, 'Philosophie'),
+(8, 'Jeux Videos'),
+(9, 'Musique');
 
 -- --------------------------------------------------------
 
@@ -65,13 +70,6 @@ CREATE TABLE `questions` (
   `date_creation` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
---
--- Contenu de la table `questions`
---
-
-INSERT INTO `questions` (`id`, `titre`, `categorie_id`, `auteur_id`, `date_creation`) VALUES
-(9, 'Quest', 1, 1, '2021-04-28 17:12:42');
-
 -- --------------------------------------------------------
 
 --
@@ -84,13 +82,6 @@ CREATE TABLE `repondre` (
   `date` datetime NOT NULL,
   `reponse` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Contenu de la table `repondre`
---
-
-INSERT INTO `repondre` (`utilisateurs_id`, `questions_id`, `date`, `reponse`) VALUES
-(1, 9, '2021-04-28 20:40:36', 'test2');
 
 -- --------------------------------------------------------
 
@@ -114,8 +105,14 @@ CREATE TABLE `utilisateurs` (
 --
 
 INSERT INTO `utilisateurs` (`id`, `pseudo`, `email`, `mot_de_passe`, `avatar`, `genre`, `date_inscription`, `role`) VALUES
-(1, 'Tristan', 'tristan@gmail.com', '29c111bb6f020dd69cfc15790dd110826135ec7cc773c18b3450537590124846', 'https://pbs.twimg.com/profile_images/787967436263944192/EjdVElEr.jpg', 'H', '2021-04-27 00:00:00', 'admin'),
-(8, 'test', 'test@gmail.com', '29c111bb6f020dd69cfc15790dd110826135ec7cc773c18b3450537590124846', 'https://www.tenforums.com/geek/gars/images/2/types/thumb_15951118880user.png', 'H', '2021-04-29 17:07:49', 'membre');
+(9, 'Tristan', 'tristan@gmail.com', '2081875a903c1f45fa320761d7c72ff591fddca3e341621543bc7ab8c9759ad1', 'https://www.tenforums.com/geek/gars/images/2/types/thumb_15951118880user.png', 'H', '2021-04-30 12:02:29', 'admin'),
+(10, 'Victor', 'victor@gmail.com', '2081875a903c1f45fa320761d7c72ff591fddca3e341621543bc7ab8c9759ad1', 'https://www.tenforums.com/geek/gars/images/2/types/thumb_15951118880user.png', 'H', '2021-04-30 12:02:48', 'membre'),
+(11, 'Arthur', 'arthur@gmail.com', '2081875a903c1f45fa320761d7c72ff591fddca3e341621543bc7ab8c9759ad1', 'https://www.tenforums.com/geek/gars/images/2/types/thumb_15951118880user.png', 'H', '2021-04-30 12:03:03', 'membre'),
+(12, 'Alice', 'alice@gmail.com', '2081875a903c1f45fa320761d7c72ff591fddca3e341621543bc7ab8c9759ad1', 'https://www.tenforums.com/geek/gars/images/2/types/thumb_15951118880user.png', 'F', '2021-04-30 12:09:35', 'membre'),
+(13, 'Lucie', 'lucie@gmail.com', '2081875a903c1f45fa320761d7c72ff591fddca3e341621543bc7ab8c9759ad1', 'https://www.tenforums.com/geek/gars/images/2/types/thumb_15951118880user.png', 'F', '2021-04-30 12:11:28', 'membre'),
+(14, 'Jean', 'jean@gmail.com', '2081875a903c1f45fa320761d7c72ff591fddca3e341621543bc7ab8c9759ad1', 'https://www.tenforums.com/geek/gars/images/2/types/thumb_15951118880user.png', 'H', '2021-04-30 12:18:46', 'membre'),
+(15, 'Mark', 'mark@gmail.com', '2081875a903c1f45fa320761d7c72ff591fddca3e341621543bc7ab8c9759ad1', 'https://www.tenforums.com/geek/gars/images/2/types/thumb_15951118880user.png', 'H', '2021-04-30 12:20:04', 'membre'),
+(16, 'Nolan', 'nolan@gmail.com', '2081875a903c1f45fa320761d7c72ff591fddca3e341621543bc7ab8c9759ad1', 'https://www.tenforums.com/geek/gars/images/2/types/thumb_15951118880user.png', 'H', '2021-04-30 12:20:52', 'membre');
 
 --
 -- Index pour les tables exportées
@@ -164,22 +161,22 @@ ALTER TABLE `utilisateurs`
 -- AUTO_INCREMENT pour la table `categories`
 --
 ALTER TABLE `categories`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 --
 -- AUTO_INCREMENT pour la table `likes`
 --
 ALTER TABLE `likes`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=37;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT pour la table `questions`
 --
 ALTER TABLE `questions`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 --
 -- AUTO_INCREMENT pour la table `utilisateurs`
 --
 ALTER TABLE `utilisateurs`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 --
 -- Contraintes pour les tables exportées
 --
