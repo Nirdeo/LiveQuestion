@@ -136,7 +136,7 @@
                         $message = "Votre réponse a été soumise";
                     }
                   } catch (Exception $e) {
-                     $message = "Vous avez déjà répondu a cette question";
+                     $message = "Vous avez déjà répondu à cette question";
                   }
                }
                ?>
