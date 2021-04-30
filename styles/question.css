@@ -8,6 +8,9 @@ body {
   background-color: #eee;
 }
 
+.toast.show {
+  margin-top: 5% !important;
+}
 .roselq {
   color: #f90f7a;
 }

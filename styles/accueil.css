@@ -8,6 +8,10 @@ body {
   background-color: #eee;
 }
 
+h3 {
+  margin-top: 5% !important;
+}
+
 /* NAVBAR */
 
 .navbar-light .navbar-brand {
@@ -24,7 +28,6 @@ body {
   max-width: 100% !important;
   margin-top: 1% !important;
 }
-
 
 .avatar {
   height: 25px;
