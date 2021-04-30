@@ -88,7 +88,7 @@
                  "<div class='toast-header'>",
                  "<strong class='mr-auto'><img class='avatar' src='" . getAvatar($result[3]) . "'> <a href='profil.php?pseudo_id=$result[3]'>" . getAuteur($result[3]) . "</a> | $responseNumber[0] réponses | " . getCateg($result[2]) . " | <a href='like.php?question_id=$result[0]'><i class='$likeIcon'></i></a> $likesNumber</strong>
                  <small>$result[4]</small>",
-                 "<a href='delete.php?question_id=$result[0]'><button type='button'>Supprimer</button></a>",
+                 "<a href='delete.php?question_id=$result[0]'><button class='btn btn-primary' type='button'>Supprimer</button></a>",
                  "</div>",
                  "<div class='toast-body'>",
                  "<a href='question.php?question_id=$result[0]'>$result[1]</a>",

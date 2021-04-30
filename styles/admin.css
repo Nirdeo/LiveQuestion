@@ -34,3 +34,8 @@ button[type=button]{
   background-color: #f90f7a;
   margin-left: 10px;
 }
+
+.btn-primary {
+  background-color: #f90f7a !important;
+  color: #fff !important;
+}
