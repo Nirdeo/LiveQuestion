@@ -5,7 +5,7 @@ Projet de création d'un réseau social de questions-réponses.
 Ce projet à été réalisé durant notre premiere année d'étude en BTS SIO (services informatiques aux organisations).
 Ce projet consiste a mettre en pratique toutes les technologies étudiées durant notre année scolaire.
 
-## technologies utilisées :
+## Technologies utilisées :
 HTML, CSS, JQUERY,  BOOTSTRAP , PHP, MYSQL.
 
 ## Notice d'utilisation : 
