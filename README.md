@@ -9,10 +9,10 @@ Ce projet consiste a mettre en pratique toutes les technologies étudiées duran
 Html, css, jquerry,  bootstrap , php, mysql.
 
 ## Notice d'utilisation : 
-Livequestion est un réseau social qui permet a des utilisateurs de parler entre eux.
-Deux rôles sont present : Administrateur et Membre,
+Livequestion est un réseau social qui permet à des utilisateurs de parler entre eux.
+Deux rôles sont présent : Administrateur et Membre,
 Un administrateur à la possibilité de supprimer, modifier les questions ou réponses posées, il peut aussi modifier ou supprimer un profil.
-Un membre peut seulement poser des questions, et y répondre. Il peut auusi consulter le profil d'autres personnes et modifier son propre profil.
+Un membre peut seulement poser des questions, et y répondre. Il peut aussi consulter le profil d'autres personnes et modifier son propre profil.
 
 #### Durée du projet:
 **15 Février au 30 Avril 2021**
