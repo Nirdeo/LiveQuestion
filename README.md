@@ -6,11 +6,11 @@ Ce projet à été réalisé durant notre premiere année d'étude en BTS SIO (s
 Ce projet consiste a mettre en pratique toutes les technologies étudiées durant notre année scolaire.
 
 ## technologies utilisées :
-Html, css, jquerry,  bootstrap , php, mysql.
+HTML, CSS, JQUERY,  BOOTSTRAP , PHP, MYSQL.
 
 ## Notice d'utilisation : 
 Livequestion est un réseau social qui permet à des utilisateurs de parler entre eux.
-Deux rôles sont présent : Administrateur et Membre,
+Deux rôles sont présents : Administrateur et Membre,
 Un administrateur à la possibilité de supprimer, modifier les questions ou réponses posées, il peut aussi modifier ou supprimer un profil.
 Un membre peut seulement poser des questions, et y répondre. Il peut aussi consulter le profil d'autres personnes et modifier son propre profil.
 
