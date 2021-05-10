@@ -17,7 +17,7 @@ Un membre peut seulement poser des questions, et y répondre. Il peut aussi cons
 ## Durée du projet :
 **15 février au 30 avril 2021**
 
-## Membres du Projet :
+## Membres du projet :
 Tristan Niel  
 -***Partie profil/administration et intégration de la page principale***  
 Victor De Domenico  
