@@ -14,7 +14,7 @@ Deux rôles sont présents : Administrateur et Membre,
 Un administrateur à la possibilité de supprimer, modifier les questions ou réponses posées, il peut aussi modifier ou supprimer un profil.
 Un membre peut seulement poser des questions, et y répondre. Il peut aussi consulter le profil d'autres personnes et modifier son propre profil.
 
-#### Durée du projet:
+## Durée du projet:
 **15 Février au 30 Avril 2021**
 
 ## Membres du Projets:
